@@ -24,13 +24,12 @@ public class DBBroker<T> {
 
 	private MongoClient client;
 	private MongoDatabase db;
-
+//"mongodb+srv://JaviPuerto10:ingenieriainformatica@thegoodhealth-yruyo.mongodb.net/test?retryWrites=true&w=majority"));
 	private DBBroker() {
 		this.client = MongoClients.create(new ConnectionString(
-				"mongodb+srv://JaviPuerto10:ingenieriainformatica@thegoodhealth-yruyo.mongodb.net/test?retryWrites=true&w=majority"));
+				"mongodb+srv://pedroRamirez:pedro1234@mantenimientoe4-0gncb.mongodb.net/test?retryWrites=true&w=majority"));
 		this.db = client.getDatabase("TheGoodHealth");
 	}
-
 	public static class SingletonHolder {
 		static DBBroker singleton = new DBBroker();
 	}
