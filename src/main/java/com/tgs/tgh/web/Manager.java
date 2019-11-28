@@ -42,6 +42,7 @@ public class Manager {
 	@Autowired
 	private UsuarioDAO usuDao;
 
+	
 	private Manager() {
 		this.usuarios = new ConcurrentHashMap<String, Usuario>();
 	}
