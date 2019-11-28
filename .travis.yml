@@ -21,5 +21,5 @@ script:
 deploy:
   provider: heroku
   api_key:
-    secure: 5468840c-379e-49a7-b61d-274f5f9f15ff
-  app: the-good-health
+    secure: e060e5e5-992d-4822-a783-592388b436d6
+  app: sgc-e4
