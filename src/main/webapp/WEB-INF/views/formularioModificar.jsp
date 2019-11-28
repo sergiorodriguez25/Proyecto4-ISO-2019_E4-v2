@@ -91,8 +91,8 @@
 					<div class="dropdown-menu" aria-labelledby="dropdown01">
 						<a class="dropdown-item" href="#">Mi Perfil</a> <a
 							class="dropdown-item" data-toggle="modal"
-							data-target="#informacion">Información</a> <a
-							class="dropdown-item" href="/">Cerrar sesión</a>
+							data-target="#informacion">Informaciï¿½n</a> <a
+							class="dropdown-item" href="/">Cerrar sesiï¿½n</a>
 					</div></li>
 			</ul>
 		</div>
@@ -112,9 +112,9 @@
 						<div class="col-md-8">
 							<div class="card">
 								<div class="card-body">
-									<h4>Formulario de Modificación</h4>
+									<h4>Formulario de Modificaciï¿½n</h4>
 									<p>Para modificar una cita, cambie los campos que
-										encontrará a continuación, después pulse en el botón de
+										encontrarï¿½ a continuaciï¿½n, despuï¿½s pulse en el botï¿½n de
 										Modificar cita.</p>
 								</div>
 								<div class="modal fade" id="informacion" tabindex="-1"
@@ -123,7 +123,7 @@
 									<div class="modal-dialog" role="document">
 										<div class="modal-content">
 											<div class="modal-header">
-												<h5 class="modal-title" id="exampleModalLongTitle">Información</h5>
+												<h5 class="modal-title" id="exampleModalLongTitle">Informaciï¿½n</h5>
 												<button type="button" class="close" data-dismiss="modal"
 													aria-label="Close">
 													<span aria-hidden="true">&times;</span>
@@ -133,8 +133,8 @@
 												En esta vista usted puede:
 												<h5></h5>
 												<h5>Modificar cita</h5>
-												Para modificar una cita, cambie los campos que encontrará a
-												continuación, después pulse en el botón de Modificar cita.
+												Para modificar una cita, cambie los campos que encontrarï¿½ a
+												continuaciï¿½n, despuï¿½s pulse en el botï¿½n de Modificar cita.
 											</div>
 											<div class="modal-footer">
 												<button type="button" class="btn btn-secondary"
@@ -163,9 +163,9 @@
 						<br></br>
 
 						<div class="col-md-6 mb-3">
-							<label for="fecha_ini">Día</label> <input type="text"
+							<label for="fecha_ini">Dï¿½a</label> <input type="text"
 								id="fecha_ini" class="form-control">
-							<div class="invalid-feedback">Información necesaria.</div>
+							<div class="invalid-feedback">Informaciï¿½n necesaria.</div>
 							<label id="fecha"></label>
 						</div>
 						<br></br>
@@ -182,7 +182,7 @@
 						<hr class="mb-4">
 						<a id="modificarcita" class="btn btn-primary btn-large"
 							type="submit">Modificar cita</a> <a id="volverAtras"
-							class="btn btn-primary btn-large" type="submit">Volver atrás</a>
+							class="btn btn-primary btn-large" type="submit">Volver atrï¿½s</a>
 						</form>
 					</div>
 				</div>
@@ -220,27 +220,27 @@
 							 */
 							var referrer = document.referrer;
 							if (referrer != 'http://localhost:8080/citas'
-									&& referrer != 'https://the-good-health.herokuapp.com/citas'
-									&& referrer != 'http://the-good-health.herokuapp.com/citas'
-									&& referrer != 'the-good-health.herokuapp.com/citas'
+									&& referrer != 'https://sgc-e4.herokuapp.com/citas'
+									&& referrer != 'http://sgc-e4.herokuapp.com/citas'
+									&& referrer != 'sgc-e4.herokuapp.com/citas'
 									&& referrer != 'http://localhost:8080/citasGestor'
-									&& referrer != 'https://the-good-health.herokuapp.com/citasGestor'
-									&& referrer != 'http://the-good-health.herokuapp.com/citasGestor'
-									&& referrer != 'the-good-health.herokuapp.com/citasGestor'
+									&& referrer != 'https://sgc-e4.herokuapp.com/citasGestor'
+									&& referrer != 'http://sgc-e4.herokuapp.com/citasGestor'
+									&& referrer != 'sgc-e4.herokuapp.com/citasGestor'
 									&& referrer != 'http://localhost:8080/medicoGestor'
-									&& referrer != 'https://the-good-health.herokuapp.com/medicoGestor'
-									&& referrer != 'http://the-good-health.herokuapp.com/medicoGestor'
-									&& referrer != 'the-good-health.herokuapp.com/medicoGestor'
+									&& referrer != 'https://sgc-e4.herokuapp.com/medicoGestor'
+									&& referrer != 'http://sgc-e4.herokuapp.com/medicoGestor'
+									&& referrer != 'sgc-e4.herokuapp.com/medicoGestor'
 									&& referrer != 'http://localhost:8080/citasGestor'
-									&& referrer != 'https://the-good-health.herokuapp.com/citasGestor'
+									&& referrer != 'https://sgc-e4.herokuapp.com/citasGestor'
 									&& referrer != 'http://localhost:8080/medicoGestor'
-									&& referrer != 'https://the-good-health.herokuapp.com/medicoGestor') {
+									&& referrer != 'https://sgc-e4.herokuapp.com/medicoGestor') {
 								var forma = document.forms[0];
 								forma.action = "/error";
 								forma.submit();
 							}
 							if (referrer == 'http://localhost:8080/medicoGestor'
-									|| referrer != 'https://the-good-health.herokuapp.com/medicoGestor') {
+									|| referrer != 'https://sgc-e4.herokuapp.com/medicoGestor') {
 								document.getElementById("tituloespecialidad").innerHTML = "";
 							}
 							var jsoModif = JSON.parse(sessionStorage.modificar);
@@ -254,10 +254,10 @@
 							weekday[0] = "Domingo";
 							weekday[1] = "Lunes";
 							weekday[2] = "Martes";
-							weekday[3] = "Miércoles";
+							weekday[3] = "Miï¿½rcoles";
 							weekday[4] = "Jueves";
 							weekday[5] = "Viernes";
-							weekday[6] = "Sábado";
+							weekday[6] = "Sï¿½bado";
 							var dateParts = diaAModificar.split("/");
 							var dateObject = new Date(+dateParts[2],
 									dateParts[1] - 1, +dateParts[0]);
@@ -328,7 +328,7 @@
 
 									$('#noHayHora')
 											.html(
-													"No hay horas disponibles para este día, seleccione otro.");
+													"No hay horas disponibles para este dï¿½a, seleccione otro.");
 									$('#noHayHora').css("color", "red");
 								}
 							}
@@ -344,10 +344,10 @@
 												event.preventDefault();
 												var referrer = document.referrer;
 												if (referrer == 'http://localhost:8080/citasGestor'
-														|| referrer == 'https://the-good-health.herokuapp.com/citasGestor') {
+														|| referrer == 'https://sgc-e4.herokuapp.com/citasGestor') {
 													location.href = "/citasGestor";
 												} else if (referrer == 'http://localhost:8080/medicoGestor'
-														|| referrer == 'https://the-good-health.herokuapp.com/medicoGestor') {
+														|| referrer == 'https://sgc-e4.herokuapp.com/medicoGestor') {
 													location.href = "/medicoGestor";
 												} else
 													location.href = "/citas";
@@ -426,10 +426,10 @@
 												weekday[0] = "Domingo";
 												weekday[1] = "Lunes";
 												weekday[2] = "Martes";
-												weekday[3] = "Miércoles";
+												weekday[3] = "Miï¿½rcoles";
 												weekday[4] = "Jueves";
 												weekday[5] = "Viernes";
-												weekday[6] = "Sábado";
+												weekday[6] = "Sï¿½bado";
 												var dateParts = $('#fecha_ini')
 														.val().split("/");
 												var dateObject = new Date(
@@ -473,7 +473,7 @@
 																	"getDate") != null) {
 														$('#noHayHora')
 																.html(
-																		"No hay horas disponibles para este día, seleccione otro.");
+																		"No hay horas disponibles para este dï¿½a, seleccione otro.");
 														$('#noHayHora').css(
 																"color", "red");
 													}
@@ -551,11 +551,11 @@
 			var dniPac;
 			var referrer = document.referrer;
 			if (referrer == "http://localhost:8080/citasGestor"
-					|| referrer == "https://the-good-health.herokuapp.com/citasGestor") {
+					|| referrer == "https://sgc-e4.herokuapp.com/citasGestor") {
 				var jsoEdit = JSON.parse(sessionStorage.PacienteEdit);
 				dniPac = jsoEdit.Paciente[0].DNI;
 			} else if (referrer == "http://localhost:8080/medicoGestor"
-					|| referrer == "https://the-good-health.herokuapp.com/medicoGestor")
+					|| referrer == "https://sgc-e4.herokuapp.com/medicoGestor")
 				dniPac = jsoModif.citaModificar[0].dniPaciente;
 			else
 				dniPac = jsoUser.resultado.usuario.dni;
@@ -602,10 +602,10 @@
 							function() {
 								var referrer = document.referrer;
 								if (referrer == "http://localhost:8080/citasGestor"
-										|| referrer == "https://the-good-health.herokuapp.com/citasGestor")
+										|| referrer == "https://sgc-e4.herokuapp.com/citasGestor")
 									window.location.href = "/citasGestor";
 								else if (referrer == "http://localhost:8080/medicoGestor"
-										|| referrer == "https://the-good-health.herokuapp.com/medicoGestor")
+										|| referrer == "https://sgc-e4.herokuapp.com/medicoGestor")
 									window.location.href = "/medicoGestor";
 								else
 									window.location.href = "/citas";
@@ -632,7 +632,7 @@
 			document.getElementById("fecha").style.display = 'none';
 			if (texto == '') {
 				document.getElementById("fecha").style.display = 'inline';
-				$('#fecha').html("Tiene que escoger un día para su cita.");
+				$('#fecha').html("Tiene que escoger un dï¿½a para su cita.");
 				$('#fecha').css("color", "red");
 				return 1;
 			}

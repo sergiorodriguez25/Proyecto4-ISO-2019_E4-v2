@@ -77,8 +77,8 @@
 					<div class="dropdown-menu" aria-labelledby="dropdown01">
 						<a class="dropdown-item" href="#">Mi Perfil</a> <a
 							class="dropdown-item" data-toggle="modal"
-							data-target="#informacion">Información</a> <a
-							class="dropdown-item" href="/">Cerrar sesión</a>
+							data-target="#informacion">Informaciï¿½n</a> <a
+							class="dropdown-item" href="/">Cerrar sesiï¿½n</a>
 					</div></li>
 			</ul>
 		</div>
@@ -95,16 +95,16 @@
 						<div class="card">
 							<div class="card-body">
 								<h4>Citas de pacientes</h4>
-								<p>Bienvenido/a a la página de "Citas de pacientes" en la
-									que aparecen todas las citas que el médico seleccionado tiene
-									programadas ordenadas por días.</p>
+								<p>Bienvenido/a a la pï¿½gina de "Citas de pacientes" en la
+									que aparecen todas las citas que el mï¿½dico seleccionado tiene
+									programadas ordenadas por dï¿½as.</p>
 								<div class="modal fade" id="informacion" tabindex="-1"
 									role="dialog" aria-labelledby="exampleModalLongTitle"
 									aria-hidden="true">
 									<div class="modal-dialog" role="document">
 										<div class="modal-content">
 											<div class="modal-header">
-												<h5 class="modal-title" id="exampleModalLongTitle">Información</h5>
+												<h5 class="modal-title" id="exampleModalLongTitle">Informaciï¿½n</h5>
 												<button type="button" class="close" data-dismiss="modal"
 													aria-label="Close">
 													<span aria-hidden="true">&times;</span>
@@ -114,16 +114,16 @@
 												En esta vista usted puede:
 												<h5></h5>
 												<h5>Volver a gestor</h5>
-												A través de este botón usted puede volver a su vista de
+												A travï¿½s de este botï¿½n usted puede volver a su vista de
 												gestor.
 												<h5></h5>
 												<h5>Modificar cita</h5>
-												A través de este botón usted podrá modificar una de las
-												próximas citas del médico.
+												A travï¿½s de este botï¿½n usted podrï¿½ modificar una de las
+												prï¿½ximas citas del mï¿½dico.
 												<h5></h5>
 												<h5>Eliminar cita</h5>
-												A través de este botón usted podrá eliminar una de las
-												próximas citas del médico.
+												A travï¿½s de este botï¿½n usted podrï¿½ eliminar una de las
+												prï¿½ximas citas del mï¿½dico.
 											</div>
 											<div class="modal-footer">
 												<button type="button" class="btn btn-secondary"
@@ -133,7 +133,7 @@
 									</div>
 								</div>
 								<p>
-									Para volver a la página principal de Gestor pulse el botón <a
+									Para volver a la pï¿½gina principal de Gestor pulse el botï¿½n <a
 										href="gestor" class="btn btn-primary btn-large" type="submit">Gestor</a>
 								</p>
 							</div>
@@ -198,26 +198,26 @@
 		jQuery(document).ready(function($) {
     		enviardni();
 			/*
-			 * Control para que no acceda a travis de la url a alguna página que no sea el home
-			 * Hay que ponerlo en todos los jsp que se hagan próximamente
+			 * Control para que no acceda a travis de la url a alguna pï¿½gina que no sea el home
+			 * Hay que ponerlo en todos los jsp que se hagan prï¿½ximamente
 			 */
 			var referrer = document.referrer;
 			if (referrer != 'http://localhost:8080/'
-					&& referrer != 'https://the-good-health.herokuapp.com/'
-						&& referrer != 'http://the-good-health.herokuapp.com/'
-							&& referrer != 'the-good-health.herokuapp.com/'
+					&& referrer != 'https://sgc-e4.herokuapp.com/'
+						&& referrer != 'http://sgc-e4.herokuapp.com/'
+							&& referrer != 'sgc-e4.herokuapp.com/'
 					&& referrer != 'http://localhost:8080/gestor'
-					&& referrer != 'https://the-good-health.herokuapp.com/gestor'
-						&& referrer != 'http://the-good-health.herokuapp.com/gestor'
-							&& referrer != 'the-good-health.herokuapp.com/gestor'
+					&& referrer != 'https://sgc-e4.herokuapp.com/gestor'
+						&& referrer != 'http://sgc-e4.herokuapp.com/gestor'
+							&& referrer != 'sgc-e4.herokuapp.com/gestor'
 					&& referrer != 'http://localhost:8080/formularioModificar'
-					&& referrer != 'https://the-good-health.herokuapp.com/formularioModificar'
-						&& referrer != 'http://the-good-health.herokuapp.com/formularioModificar'
-							&& referrer != 'the-good-health.herokuapp.com/formularioModificar'
+					&& referrer != 'https://sgc-e4.herokuapp.com/formularioModificar'
+						&& referrer != 'http://sgc-e4.herokuapp.com/formularioModificar'
+							&& referrer != 'sgc-e4.herokuapp.com/formularioModificar'
 					&& referrer != 'http://localhost:8080/medicoGestor'
-					&& referrer != 'https://the-good-health.herokuapp.com/medicoGestor'
-						&& referrer != 'http://the-good-health.herokuapp.com/medicoGestor'
-							&& referrer != 'the-good-health.herokuapp.com/medicoGestor'){
+					&& referrer != 'https://sgc-e4.herokuapp.com/medicoGestor'
+						&& referrer != 'http://sgc-e4.herokuapp.com/medicoGestor'
+							&& referrer != 'sgc-e4.herokuapp.com/medicoGestor'){
 				var forma = document.forms[0];
 				forma.action = "/error";
 				forma.submit();
@@ -283,8 +283,8 @@
 			var dniMedico = jsoMedi.Medico[0].DNI;
 
 			swal({
-				  title: "¿Quiere eliminar esta cita?",
-				  text: "Si pulsa el botón OK dejará de tener asignada la cita",
+				  title: "ï¿½Quiere eliminar esta cita?",
+				  text: "Si pulsa el botï¿½n OK dejarï¿½ de tener asignada la cita",
 				  icon: "warning",
 				  buttons: true,
 				  dangerMode: true,

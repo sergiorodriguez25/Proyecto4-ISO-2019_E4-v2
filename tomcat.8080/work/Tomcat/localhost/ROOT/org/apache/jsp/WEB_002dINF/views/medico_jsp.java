@@ -310,13 +310,13 @@ public final class medico_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t\t\t\t\t\t */\r\n");
       out.write("\t\t\t\t\t\t\tvar referrer = document.referrer;\r\n");
       out.write("\t\t\t\t\t\t\tif (referrer != 'http://localhost:8080/'\r\n");
-      out.write("\t\t\t\t\t\t\t\t\t&& referrer != 'https://the-good-health.herokuapp.com/'\r\n");
+      out.write("\t\t\t\t\t\t\t\t\t&& referrer != 'https://sgc-e4.herokuapp.com/'\r\n");
       out.write("\t\t\t\t\t\t\t\t\t&& referrer != 'http://localhost:8080/registro'\r\n");
-      out.write("\t\t\t\t\t\t\t\t\t&& referrer != 'https://the-good-health.herokuapp.com/registro'\r\n");
+      out.write("\t\t\t\t\t\t\t\t\t&& referrer != 'https://sgc-e4.herokuapp.com/registro'\r\n");
       out.write("\t\t\t\t\t\t\t\t\t&& referrer != 'http://localhost:8080/citas'\r\n");
-      out.write("\t\t\t\t\t\t\t\t\t&& referrer != 'https://the-good-health.herokuapp.com/citas'\r\n");
+      out.write("\t\t\t\t\t\t\t\t\t&& referrer != 'https://sgc-e4.herokuapp.com/citas'\r\n");
       out.write("\t\t\t\t\t\t\t\t\t&& referrer != 'http://localhost:8080/gestor'\r\n");
-      out.write("\t\t\t\t\t\t\t\t\t&& referrer != 'https://the-good-health.herokuapp.com/gestor') {\r\n");
+      out.write("\t\t\t\t\t\t\t\t\t&& referrer != 'https://sgc-e4.herokuapp.com/gestor') {\r\n");
       out.write("\t\t\t\t\t\t\t\tvar forma = document.forms[0];\r\n");
       out.write("\t\t\t\t\t\t\t\tforma.action = \"/error\";\r\n");
       out.write("\t\t\t\t\t\t\t\tforma.submit();\r\n");
@@ -334,7 +334,7 @@ public final class medico_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\r\n");
       out.write("\t\t\t\t\t\t\tvar referrer = document.referrer;\r\n");
       out.write("\t\t\t\t\t\t\tif (referrer != 'http://localhost:8080/gestor'\r\n");
-      out.write("\t\t\t\t\t\t\t\t\t&& referrer != 'https://the-good-health.herokuapp.com/gestor') {\r\n");
+      out.write("\t\t\t\t\t\t\t\t\t&& referrer != 'https://sgc-e4.herokuapp.com/gestor') {\r\n");
       out.write("\t\t\t\t\t\t\t\t$('#modificarMedico').hide();\r\n");
       out.write("\t\t\t\t\t\t\t}\r\n");
       out.write("\t\t\t\t\t\t});\r\n");
@@ -345,7 +345,7 @@ public final class medico_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\r\n");
       out.write("\t\t\t\t\t\t\tvar referrer = document.referrer;\r\n");
       out.write("\t\t\t\t\t\t\tif (referrer != 'http://localhost:8080/gestor'\r\n");
-      out.write("\t\t\t\t\t\t\t\t\t&& referrer != 'https://the-good-health.herokuapp.com/gestor') {\r\n");
+      out.write("\t\t\t\t\t\t\t\t\t&& referrer != 'https://sgc-e4.herokuapp.com/gestor') {\r\n");
       out.write("\t\t\t\t\t\t\t\t$('#eliminarMedico').hide();\r\n");
       out.write("\t\t\t\t\t\t\t}\r\n");
       out.write("\t\t\t\t\t\t});\r\n");
@@ -473,7 +473,7 @@ public final class medico_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\r\n");
       out.write("\t\t\t\t\t\t\tvar referrer = document.referrer;\r\n");
       out.write("\t\t\t\t\t\t\tif (referrer != 'http://localhost:8080/gestor'\r\n");
-      out.write("\t\t\t\t\t\t\t\t\t&& referrer != 'https://the-good-health.herokuapp.com/gestor') {\r\n");
+      out.write("\t\t\t\t\t\t\t\t\t&& referrer != 'https://sgc-e4.herokuapp.com/gestor') {\r\n");
       out.write("\t\t\t\t\t\t\t\t$('#columnaModificar').hide();\r\n");
       out.write("\t\t\t\t\t\t\t}\r\n");
       out.write("\t\t\t\t\t\t});\r\n");
@@ -484,7 +484,7 @@ public final class medico_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\r\n");
       out.write("\t\t\t\t\t\t\tvar referrer = document.referrer;\r\n");
       out.write("\t\t\t\t\t\t\tif (referrer != 'http://localhost:8080/gestor'\r\n");
-      out.write("\t\t\t\t\t\t\t\t\t&& referrer != 'https://the-good-health.herokuapp.com/gestor') {\r\n");
+      out.write("\t\t\t\t\t\t\t\t\t&& referrer != 'https://sgc-e4.herokuapp.com/gestor') {\r\n");
       out.write("\t\t\t\t\t\t\t\t$('#columnaEliminar').hide();\r\n");
       out.write("\t\t\t\t\t\t\t}\r\n");
       out.write("\t\t\t\t\t\t});\r\n");

@@ -80,8 +80,8 @@
 					<div class="dropdown-menu" aria-labelledby="dropdown01">
 						<a class="dropdown-item" href="#">Mi Perfil</a> <a
 							class="dropdown-item" data-toggle="modal"
-							data-target="#informacion">Información</a> <a
-							class="dropdown-item" href="/">Cerrar sesión</a>
+							data-target="#informacion">Informaciï¿½n</a> <a
+							class="dropdown-item" href="/">Cerrar sesiï¿½n</a>
 					</div></li>
 			</ul>
 		</div>
@@ -99,14 +99,14 @@
 							<div class="card-body">
 								<h4>Mis Citas</h4>
 								<p>
-									Bienvenido/a a la página de "Mis citas" en la que aparecen
+									Bienvenido/a a la pï¿½gina de "Mis citas" en la que aparecen
 									todas las citas que tiene programadas. Si desea modificar(<img
 										src="https://image.flaticon.com/icons/png/512/23/23187.png"
 										class="img-fluid rounded" width="25" height="25">) o
 									anular(<img
 										src="https://image.flaticon.com/icons/png/512/39/39220.png"
 										class="img-fluid rounded" width="25" height="25">) una
-									cita, pulse el botón de la acción que quiera realizar y que se
+									cita, pulse el botï¿½n de la acciï¿½n que quiera realizar y que se
 									encuentra a la derecha de la cita con la que quiera
 									interactuar.
 								</p>
@@ -116,7 +116,7 @@
 									<div class="modal-dialog" role="document">
 										<div class="modal-content">
 											<div class="modal-header">
-												<h5 class="modal-title" id="exampleModalLongTitle">Información</h5>
+												<h5 class="modal-title" id="exampleModalLongTitle">Informaciï¿½n</h5>
 												<button type="button" class="close" data-dismiss="modal"
 													aria-label="Close">
 													<span aria-hidden="true">&times;</span>
@@ -126,7 +126,7 @@
 												En esta vista usted puede:
 												<h5></h5>
 												<h5>Pedir cita</h5>
-												Solicitar una cita, para ello deberá tener un centro médico
+												Solicitar una cita, para ello deberï¿½ tener un centro mï¿½dico
 												asignado.
 												<h5></h5>
 												<h5>
@@ -134,16 +134,16 @@
 														src="https://image.flaticon.com/icons/png/512/23/23187.png"
 														class="img-fluid rounded" width="25" height="25">)
 												</h5>
-												A través de este botón usted podrá modificar una de sus
-												próximas citas, el día y su hora.
+												A travï¿½s de este botï¿½n usted podrï¿½ modificar una de sus
+												prï¿½ximas citas, el dï¿½a y su hora.
 												<h5></h5>
 												<h5>
 													Eliminar cita(<img
 														src="https://image.flaticon.com/icons/png/512/39/39220.png"
 														class="img-fluid rounded" width="25" height="25">)
 												</h5>
-												A través de este botón usted podrá eliminar una de sus
-												próximas citas.
+												A travï¿½s de este botï¿½n usted podrï¿½ eliminar una de sus
+												prï¿½ximas citas.
 											</div>
 											<div class="modal-footer">
 												<button type="button" class="btn btn-secondary"
@@ -153,16 +153,16 @@
 									</div>
 								</div>
 								<p>
-									Si desea pedir una cita pulse el botón <a
+									Si desea pedir una cita pulse el botï¿½n <a
 										href="/formularioCitas" class="btn btn-primary btn-large"
 										type="submit">Pedir Cita</a>
 								</p>
 								<p id="volverMedico">
-									Para volver a la interfaz de Médico pulse el botón <a
-										href="/medico" class="btn btn-primary btn-large" type="submit">Médico</a>
+									Para volver a la interfaz de Mï¿½dico pulse el botï¿½n <a
+										href="/medico" class="btn btn-primary btn-large" type="submit">Mï¿½dico</a>
 								</p>
 								<p id="volverGestor">
-									Para volver a la página principal de Gestor pulse el botón <a
+									Para volver a la pï¿½gina principal de Gestor pulse el botï¿½n <a
 										href="gestor" class="btn btn-primary btn-large" type="submit">Gestor</a>
 								</p>
 							</div>
@@ -194,7 +194,7 @@
 								<td align="center" scope="col"><b>Hora</b></td>
 								<td align="center" scope="col"><b>Fecha</b></td>
 								<td align="center" scope="col"><b>Especialidad</b></td>
-								<td align="center" scope="col"><b>Médico</b></td>
+								<td align="center" scope="col"><b>Mï¿½dico</b></td>
 								<td align="center" scope="col"><b>Centro</b></td>
 							</tr>
 						</thead>
@@ -227,36 +227,36 @@
 	<script type="text/javascript">
 	jQuery(document).ready(function($) {
 		/*
-		 * Control para que no acceda a travis de la url a alguna página que no sea el home
-		 * Hay que ponerlo en todos los jsp que se hagan próximamente
+		 * Control para que no acceda a travis de la url a alguna pï¿½gina que no sea el home
+		 * Hay que ponerlo en todos los jsp que se hagan prï¿½ximamente
 		 */
 		var referrer = document.referrer;
 		if (referrer != 'http://localhost:8080/'
-				&& referrer != 'https://the-good-health.herokuapp.com/'
+				&& referrer != 'https://sgc-e4.herokuapp.com/'
 				&& referrer != 'http://localhost:8080/registro'
-				&& referrer != 'https://the-good-health.herokuapp.com/registro'
-					&& referrer != 'http://the-good-health.herokuapp.com/registro'
-						&& referrer != 'the-good-health.herokuapp.com/registro'
+				&& referrer != 'https://sgc-e4.herokuapp.com/registro'
+					&& referrer != 'https://sgc-e4.herokuapp.com/registro'
+						&& referrer != 'sgc-e4.herokuapp.com/registro'
 				&& referrer != 'http://localhost:8080/formularioCitas'
-				&& referrer != 'https://the-good-health.herokuapp.com/formularioCitas'
-					&& referrer != 'http://the-good-health.herokuapp.com/formularioCitas'
-						&& referrer != 'the-good-health.herokuapp.com/formularioCitas'
+				&& referrer != 'https://sgc-e4.herokuapp.com//formularioCitas'
+					&& referrer != 'https://sgc-e4.herokuapp.com/formularioCitas'
+						&& referrer != 'sgc-e4.herokuapp.com/formularioCitas'
 				&& referrer != 'http://localhost:8080/citas'
-				&& referrer != 'https://the-good-health.herokuapp.com/citas'
-					&& referrer != 'http://the-good-health.herokuapp.com/citas'
-						&& referrer != 'the-good-health.herokuapp.com/citas'
+				&& referrer != 'https://sgc-e4.herokuapp.com/citas'
+					&& referrer != 'https://sgc-e4.herokuapp.com/citas'
+						&& referrer != 'sgc-e4.herokuapp.com/citas'
 				&& referrer != 'http://localhost:8080/medico'
-				&& referrer != 'https://the-good-health.herokuapp.com/medico'
-					&& referrer != 'http://the-good-health.herokuapp.com/medico'
-						&& referrer != 'the-good-health.herokuapp.com/medico'
+				&& referrer != 'https://sgc-e4.herokuapp.com/medico'
+					&& referrer != 'https://sgc-e4.herokuapp.com/medico'
+						&& referrer != 'sgc-e4.herokuapp.com/medico'
 				&& referrer != 'http://localhost:8080/gestor'
-				&& referrer != 'https://the-good-health.herokuapp.com/gestor'
-					&& referrer != 'http://the-good-health.herokuapp.com/gestor'
-						&& referrer != 'the-good-health.herokuapp.com/gestor'
+				&& referrer != 'https://sgc-e4.herokuapp.com/gestor'
+					&& referrer != 'https://sgc-e4.herokuapp.com/gestor'
+						&& referrer != 'sgc-e4.herokuapp.com/gestor'
 				&& referrer != 'http://localhost:8080/formularioModificar'
-				&& referrer != 'https://the-good-health.herokuapp.com/formularioModificar'
-					&& referrer != 'http://the-good-health.herokuapp.com/formularioModificar'
-						&& referrer != 'the-good-health.herokuapp.com/formularioModificar'){
+				&& referrer != 'https://sgc-e4.herokuapp.com/formularioModificar'
+					&& referrer != 'https://sgc-e4.herokuapp.com/formularioModificar'
+						&& referrer != 'sgc-e4.herokuapp.com/formularioModificar'){
 			var forma = document.forms[0];
 			forma.action = "/error";
 			forma.submit();
@@ -392,8 +392,8 @@
 			};
 			console.log(data);
 			swal({
-				  title: "¿Quiere eliminar esta cita?",
-				  text: "Si pulsa el botón OK dejará de tener asignada la cita",
+				  title: "ï¿½Quiere eliminar esta cita?",
+				  text: "Si pulsa el botï¿½n OK dejarï¿½ de tener asignada la cita",
 				  icon: "warning",
 				  buttons: true,
 				  dangerMode: true,

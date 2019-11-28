@@ -77,8 +77,8 @@
 					<div class="dropdown-menu" aria-labelledby="dropdown01">
 						<a class="dropdown-item" href="#">Mi Perfil</a> <a
 							class="dropdown-item" data-toggle="modal"
-							data-target="#informacion">Información</a> <a
-							class="dropdown-item" href="/">Cerrar sesión</a>
+							data-target="#informacion">Informaciï¿½n</a> <a
+							class="dropdown-item" href="/">Cerrar sesiï¿½n</a>
 					</div></li>
 			</ul>
 		</div>
@@ -95,16 +95,16 @@
 						<div class="card">
 							<div class="card-body">
 								<h4>Citas de pacientes</h4>
-								<p>Bienvenido/a a la página de "Citas de pacientes" en la
+								<p>Bienvenido/a a la pï¿½gina de "Citas de pacientes" en la
 									que aparecen todas las citas que tiene programadas ordenadas
-									por días.</p>
+									por dï¿½as.</p>
 								<div class="modal fade" id="informacion" tabindex="-1"
 									role="dialog" aria-labelledby="exampleModalLongTitle"
 									aria-hidden="true">
 									<div class="modal-dialog" role="document">
 										<div class="modal-content">
 											<div class="modal-header">
-												<h5 class="modal-title" id="exampleModalLongTitle">Información</h5>
+												<h5 class="modal-title" id="exampleModalLongTitle">Informaciï¿½n</h5>
 												<button type="button" class="close" data-dismiss="modal"
 													aria-label="Close">
 													<span aria-hidden="true">&times;</span>
@@ -114,8 +114,8 @@
 												En esta vista usted puede:
 												<h5></h5>
 												<h5>Mis citas</h5>
-												Mediante este botón usted cambiará a su vista paciente,
-												dónde podrá solicitar, modificar y eliminar sus citas
+												Mediante este botï¿½n usted cambiarï¿½ a su vista paciente,
+												dï¿½nde podrï¿½ solicitar, modificar y eliminar sus citas
 												personales.
 											</div>
 											<div class="modal-footer">
@@ -126,12 +126,12 @@
 									</div>
 								</div>
 								<p id="cambiarPaciente">
-									Si desea cambiar a vista de Paciente pulse el botón <a
+									Si desea cambiar a vista de Paciente pulse el botï¿½n <a
 										href="/citas" class="btn btn-primary btn-large" type="submit">Mis
 										citas</a>
 								</p>
 								<p id="volverGestor">
-									Para volver a la página principal de Gestor pulse el botón <a
+									Para volver a la pï¿½gina principal de Gestor pulse el botï¿½n <a
 										href="/gestor" class="btn btn-primary btn-large" type="submit">Gestor</a>
 								</p>
 							</div>
@@ -155,7 +155,7 @@
 			<div class="row d-flex justify-content-center">
 				<div class="container">
 					<div align='center'>
-						<h2>Próximas Citas</h2>
+						<h2>Prï¿½ximas Citas</h2>
 					</div>
 					<table id="Table" class="table table-bordered">
 						<thead>
@@ -197,18 +197,18 @@
 						function($) {
 							enviardni();
 							/*
-							 * Control para que no acceda a travis de la url a alguna página que no sea el home
-							 * Hay que ponerlo en todos los jsp que se hagan próximamente
+							 * Control para que no acceda a travis de la url a alguna pï¿½gina que no sea el home
+							 * Hay que ponerlo en todos los jsp que se hagan prï¿½ximamente
 							 */
 							var referrer = document.referrer;
 							if (referrer != 'http://localhost:8080/'
-									&& referrer != 'https://the-good-health.herokuapp.com/'
+									&& referrer != 'https://sgc-e4.herokuapp.com/'
 									&& referrer != 'http://localhost:8080/registro'
-									&& referrer != 'https://the-good-health.herokuapp.com/registro'
+									&& referrer != 'https://sgc-e4.herokuapp.com/registro'
 									&& referrer != 'http://localhost:8080/citas'
-									&& referrer != 'https://the-good-health.herokuapp.com/citas'
+									&& referrer != 'https://sgc-e4.herokuapp.com/citas'
 									&& referrer != 'http://localhost:8080/gestor'
-									&& referrer != 'https://the-good-health.herokuapp.com/gestor') {
+									&& referrer != 'https://sgc-e4.herokuapp.com/gestor') {
 								var forma = document.forms[0];
 								forma.action = "/error";
 								forma.submit();
@@ -226,7 +226,7 @@
 
 							var referrer = document.referrer;
 							if (referrer != 'http://localhost:8080/gestor'
-									&& referrer != 'https://the-good-health.herokuapp.com/gestor') {
+									&& referrer != 'https://sgc-e4.herokuapp.com/gestor') {
 								$('#modificarMedico').hide();
 							}
 						});
@@ -237,7 +237,7 @@
 
 							var referrer = document.referrer;
 							if (referrer != 'http://localhost:8080/gestor'
-									&& referrer != 'https://the-good-health.herokuapp.com/gestor') {
+									&& referrer != 'https://sgc-e4.herokuapp.com/gestor') {
 								$('#eliminarMedico').hide();
 							}
 						});
@@ -365,7 +365,7 @@
 
 							var referrer = document.referrer;
 							if (referrer != 'http://localhost:8080/gestor'
-									&& referrer != 'https://the-good-health.herokuapp.com/gestor') {
+									&& referrer != 'https://sgc-e4.herokuapp.com/gestor') {
 								$('#columnaModificar').hide();
 							}
 						});
@@ -376,7 +376,7 @@
 
 							var referrer = document.referrer;
 							if (referrer != 'http://localhost:8080/gestor'
-									&& referrer != 'https://the-good-health.herokuapp.com/gestor') {
+									&& referrer != 'https://sgc-e4.herokuapp.com/gestor') {
 								$('#columnaEliminar').hide();
 							}
 						});

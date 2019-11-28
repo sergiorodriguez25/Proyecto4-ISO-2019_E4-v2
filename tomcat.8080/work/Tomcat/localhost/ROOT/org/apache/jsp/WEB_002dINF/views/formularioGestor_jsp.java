@@ -306,7 +306,7 @@ public final class formularioGestor_jsp extends org.apache.jasper.runtime.HttpJs
       out.write("\t\t\t */\r\n");
       out.write("\t\t\t// \t\t\t\t\t\t\tvar referrer = document.referrer;\r\n");
       out.write("\t\t\t// \t\t\t\t\t\t\tif (referrer != 'http://localhost:8080/citas'\r\n");
-      out.write("\t\t\t// \t\t\t\t\t\t\t\t\t&& referrer != 'https://the-good-health.herokuapp.com/citas') {\r\n");
+      out.write("\t\t\t// \t\t\t\t\t\t\t\t\t&& referrer != 'https://sgc-e4.herokuapp.com/citas') {\r\n");
       out.write("\t\t\t// \t\t\t\t\t\t\t\tvar forma = document.forms[0];\r\n");
       out.write("\t\t\t// \t\t\t\t\t\t\t\tforma.action = \"/error\";\r\n");
       out.write("\t\t\t// \t\t\t\t\t\t\t\tforma.submit();\r\n");

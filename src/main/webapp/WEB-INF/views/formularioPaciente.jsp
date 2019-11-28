@@ -88,8 +88,8 @@
 					<div class="dropdown-menu" aria-labelledby="dropdown01">
 						<a class="dropdown-item" href="#">Mi Perfil</a> <a
 							class="dropdown-item" data-toggle="modal"
-							data-target="#informacion">Información</a> <a
-							class="dropdown-item" href="/">Cerrar sesión</a>
+							data-target="#informacion">Informaciï¿½n</a> <a
+							class="dropdown-item" href="/">Cerrar sesiï¿½n</a>
 					</div></li>
 			</ul>
 		</div>
@@ -109,8 +109,8 @@
 						<div class="col-md-8">
 							<div class="card">
 								<div class="card-body">
-									<h4>Formulario de Asignación de Especialistas</h4>
-									<p>Se encuentra en la página de gestión de especialistas,
+									<h4>Formulario de Asignaciï¿½n de Especialistas</h4>
+									<p>Se encuentra en la pï¿½gina de gestiï¿½n de especialistas,
 										asigne el o los distintos especialistas del paciente
 										seleccionado.</p>
 
@@ -120,7 +120,7 @@
 										<div class="modal-dialog" role="document">
 											<div class="modal-content">
 												<div class="modal-header">
-													<h5 class="modal-title" id="exampleModalLongTitle">Información</h5>
+													<h5 class="modal-title" id="exampleModalLongTitle">Informaciï¿½n</h5>
 													<button type="button" class="close" data-dismiss="modal"
 														aria-label="Close">
 														<span aria-hidden="true">&times;</span>
@@ -130,10 +130,10 @@
 													En esta vista usted puede:
 													<h5></h5>
 													<h5>Seleccionar los especialistas del paciente</h5>
-													Usted se encuentra en la página de gestión de
+													Usted se encuentra en la pï¿½gina de gestiï¿½n de
 													especialistas, asigne el o los distintos especialistas del
-													paciente seleccionado. Para ello pulse el botón "+" para
-													añadir un especialista y el botón "-" para eliminarlo.
+													paciente seleccionado. Para ello pulse el botï¿½n "+" para
+													aï¿½adir un especialista y el botï¿½n "-" para eliminarlo.
 												</div>
 												<div class="modal-footer">
 													<button type="button" class="btn btn-secondary"
@@ -161,7 +161,7 @@
 				</div>
 				<div align='center'>
 					<div class="col-md-6 mb-3">
-						<label id="tituloCentroMedico"><b>Centro Médico</b></label>
+						<label id="tituloCentroMedico"><b>Centro Mï¿½dico</b></label>
 						<div>
 							<label id="centroMedico"></label>
 						</div>
@@ -169,35 +169,35 @@
 				</div>
 				<p align="center">
 					<b>Seleccione el especialista que quiere asignar, una vez haya
-						terminado pulse el botón Aceptar</b>
+						terminado pulse el botï¿½n Aceptar</b>
 				</p>
 				<br>
 				<div class="container" id="myGroup">
 					<p>
 						<a class="btn btn-primary" data-toggle="collapse" href="#podologo"
-							role="button" aria-expanded="false" aria-controls="podologo">Podólogo</a>
+							role="button" aria-expanded="false" aria-controls="podologo">Podï¿½logo</a>
 						<button class="btn btn-primary" type="button"
 							data-toggle="collapse" data-target="#cabecera"
-							aria-expanded="false" aria-controls="cabecera">Médico de
+							aria-expanded="false" aria-controls="cabecera">Mï¿½dico de
 							cabecera</button>
 						<button class="btn btn-primary" type="button"
 							data-toggle="collapse" data-target="#traumatologo"
-							aria-expanded="false" aria-controls="traumatologo">Traumatólogo</button>
+							aria-expanded="false" aria-controls="traumatologo">Traumatï¿½logo</button>
 						<button class="btn btn-primary" type="button"
 							data-toggle="collapse" data-target="#alergologia"
-							aria-expanded="false" aria-controls="alergologia">Alergología</button>
+							aria-expanded="false" aria-controls="alergologia">Alergologï¿½a</button>
 						<button class="btn btn-primary" type="button"
 							data-toggle="collapse" data-target="#geriatria"
-							aria-expanded="false" aria-controls="geriatria">Geriatría</button>
+							aria-expanded="false" aria-controls="geriatria">Geriatrï¿½a</button>
 						<button class="btn btn-primary" type="button"
 							data-toggle="collapse" data-target="#enfermeria"
-							aria-expanded="false" aria-controls="enfermeria">Enfermería</button>
+							aria-expanded="false" aria-controls="enfermeria">Enfermerï¿½a</button>
 						<button class="btn btn-primary" type="button"
 							data-toggle="collapse" data-target="#pediatria"
-							aria-expanded="false" aria-controls="pediatria">Pediatría</button>
+							aria-expanded="false" aria-controls="pediatria">Pediatrï¿½a</button>
 						<button class="btn btn-primary" type="button"
 							data-toggle="collapse" data-target="#psiquiatria"
-							aria-expanded="false" aria-controls="psiquiatria">Psiquiatría</button>
+							aria-expanded="false" aria-controls="psiquiatria">Psiquiatrï¿½a</button>
 					</p>
 					<div class="row d-flex justify-content-center">
 						<div class="container">
@@ -207,7 +207,7 @@
 										<tr class="table-primary">
 											<td align="center" scope="col"><b>DNI</b></td>
 											<td align="center" scope="col"><b>Nombre</b></td>
-											<td align="center" scope="col"><b>Teléfono</b></td>
+											<td align="center" scope="col"><b>Telï¿½fono</b></td>
 										</tr>
 									</thead>
 								</table>
@@ -223,7 +223,7 @@
 										<tr class="table-primary">
 											<td align="center" scope="col"><b>DNI</b></td>
 											<td align="center" scope="col"><b>Nombre</b></td>
-											<td align="center" scope="col"><b>Teléfono</b></td>
+											<td align="center" scope="col"><b>Telï¿½fono</b></td>
 										</tr>
 									</thead>
 								</table>
@@ -239,7 +239,7 @@
 										<tr class="table-primary">
 											<td align="center" scope="col"><b>DNI</b></td>
 											<td align="center" scope="col"><b>Nombre</b></td>
-											<td align="center" scope="col"><b>Teléfono</b></td>
+											<td align="center" scope="col"><b>Telï¿½fono</b></td>
 										</tr>
 									</thead>
 								</table>
@@ -255,7 +255,7 @@
 										<tr class="table-primary">
 											<td align="center" scope="col"><b>DNI</b></td>
 											<td align="center" scope="col"><b>Nombre</b></td>
-											<td align="center" scope="col"><b>Teléfono</b></td>
+											<td align="center" scope="col"><b>Telï¿½fono</b></td>
 										</tr>
 									</thead>
 								</table>
@@ -271,7 +271,7 @@
 										<tr class="table-primary">
 											<td align="center" scope="col"><b>DNI</b></td>
 											<td align="center" scope="col"><b>Nombre</b></td>
-											<td align="center" scope="col"><b>Teléfono</b></td>
+											<td align="center" scope="col"><b>Telï¿½fono</b></td>
 										</tr>
 									</thead>
 								</table>
@@ -287,7 +287,7 @@
 										<tr class="table-primary">
 											<td align="center" scope="col"><b>DNI</b></td>
 											<td align="center" scope="col"><b>Nombre</b></td>
-											<td align="center" scope="col"><b>Teléfono</b></td>
+											<td align="center" scope="col"><b>Telï¿½fono</b></td>
 										</tr>
 									</thead>
 								</table>
@@ -303,7 +303,7 @@
 										<tr class="table-primary">
 											<td align="center" scope="col"><b>DNI</b></td>
 											<td align="center" scope="col"><b>Nombre</b></td>
-											<td align="center" scope="col"><b>Teléfono</b></td>
+											<td align="center" scope="col"><b>Telï¿½fono</b></td>
 										</tr>
 									</thead>
 								</table>
@@ -319,7 +319,7 @@
 										<tr class="table-primary">
 											<td align="center" scope="col"><b>DNI</b></td>
 											<td align="center" scope="col"><b>Nombre</b></td>
-											<td align="center" scope="col"><b>Teléfono</b></td>
+											<td align="center" scope="col"><b>Telï¿½fono</b></td>
 										</tr>
 									</thead>
 								</table>
@@ -385,14 +385,14 @@
 
 							pedirMedicosDelCentro(centroMedicoGestor);
 							/*
-							 * Control para que no acceda a travis de la url a alguna página que no sea el home
-							 * Hay que ponerlo en todos los jsp que se hagan próximamente
+							 * Control para que no acceda a travis de la url a alguna pï¿½gina que no sea el home
+							 * Hay que ponerlo en todos los jsp que se hagan prï¿½ximamente
 							 */
 							var referrer = document.referrer;
 							if (referrer != 'http://localhost:8080/gestor'
-									&& referrer != 'https://the-good-health.herokuapp.com/gestor'
-										&& referrer != 'http://the-good-health.herokuapp.com/gestor'
-											&& referrer != 'the-good-health.herokuapp.com/gestor') {
+									&& referrer != 'https://sgc-e4.herokuapp.com/gestor'
+										&& referrer != 'http://sgc-e4.herokuapp.com/gestor'
+											&& referrer != 'sgc-e4.herokuapp.com/gestor') {
 								var forma = document.forms[0];
 								forma.action = "/error";
 								forma.submit();
@@ -450,7 +450,7 @@
 			console.log("Centro OK");
 			swal({
 				title : "Solicitud recibida",
-				text : "Has añadido el paciente",
+				text : "Has aï¿½adido el paciente",
 				icon : "success",
 			}).then(function() {
 				window.location.href = "/gestor";
@@ -490,11 +490,11 @@
 			var jsoMedicos = JSON.parse(respuesta);
 			sessionStorage.listaMedicosEsp = JSON.stringify(jsoMedicos);
 
-			var podologos = medicosEspecialidad(jsoMedicos.Medicos, "Podólogo");
+			var podologos = medicosEspecialidad(jsoMedicos.Medicos, "Podï¿½logo");
 			if (podologos.length == 0)
 				$('#noHayEspecialistas')
 						.html(
-								"No hay especialistas de este tipo en el centro médico");
+								"No hay especialistas de este tipo en el centro mï¿½dico");
 			else {
 				for (var i = 0; i < podologos.length; i++) {
 					$("#TablePodologo")
@@ -521,11 +521,11 @@
 			}
 
 			var cabecera = medicosEspecialidad(jsoMedicos.Medicos,
-					"Médico de Cabecera");
+					"Mï¿½dico de Cabecera");
 			if (cabecera.length == 0)
 				$('#noHayEspecialistas1')
 						.html(
-								"No hay especialistas de este tipo en el centro médico");
+								"No hay especialistas de este tipo en el centro mï¿½dico");
 			else {
 				for (var i = 0; i < cabecera.length; i++) {
 					$("#TableCabecera")
@@ -552,11 +552,11 @@
 			}
 
 			var traumatologos = medicosEspecialidad(jsoMedicos.Medicos,
-					"Traumatólogo");
+					"Traumatï¿½logo");
 			if (traumatologos.length == 0)
 				$('#noHayEspecialistas2')
 						.html(
-								"No hay especialistas de este tipo en el centro médico");
+								"No hay especialistas de este tipo en el centro mï¿½dico");
 			else {
 				for (var i = 0; i < traumatologos.length; i++) {
 					$("#TableTraumatologo")
@@ -583,11 +583,11 @@
 			}
 
 			var alergologos = medicosEspecialidad(jsoMedicos.Medicos,
-					"Alergología");
+					"Alergologï¿½a");
 			if (alergologos.length == 0)
 				$('#noHayEspecialistas3')
 						.html(
-								"No hay especialistas de este tipo en el centro médico");
+								"No hay especialistas de este tipo en el centro mï¿½dico");
 			else {
 				for (var i = 0; i < alergologos.length; i++) {
 					$("#TableAlergologia")
@@ -614,11 +614,11 @@
 			}
 
 			var geriatrias = medicosEspecialidad(jsoMedicos.Medicos,
-					"Geriatría");
+					"Geriatrï¿½a");
 			if (geriatrias.length == 0)
 				$('#noHayEspecialistas4')
 						.html(
-								"No hay especialistas de este tipo en el centro médico");
+								"No hay especialistas de este tipo en el centro mï¿½dico");
 			else {
 				for (var i = 0; i < geriatrias.length; i++) {
 					$("#TableGeriatria")
@@ -645,11 +645,11 @@
 			}
 
 			var enfermeros = medicosEspecialidad(jsoMedicos.Medicos,
-					"Enfermería");
+					"Enfermerï¿½a");
 			if (enfermeros.length == 0)
 				$('#noHayEspecialistas5')
 						.html(
-								"No hay especialistas de este tipo en el centro médico");
+								"No hay especialistas de este tipo en el centro mï¿½dico");
 			else {
 				for (var i = 0; i < enfermeros.length; i++) {
 					$("#TableEnfermeria")
@@ -675,11 +675,11 @@
 				}
 			}
 
-			var pediatras = medicosEspecialidad(jsoMedicos.Medicos, "Pediatría");
+			var pediatras = medicosEspecialidad(jsoMedicos.Medicos, "Pediatrï¿½a");
 			if (pediatras.length == 0)
 				$('#noHayEspecialistas6')
 						.html(
-								"No hay especialistas de este tipo en el centro médico");
+								"No hay especialistas de este tipo en el centro mï¿½dico");
 			else {
 				for (var i = 0; i < pediatras.length; i++) {
 					$("#TablePediatria")
@@ -706,11 +706,11 @@
 			}
 
 			var psiquiatras = medicosEspecialidad(jsoMedicos.Medicos,
-					"Psiquiatría");
+					"Psiquiatrï¿½a");
 			if (psiquiatras.length == 0)
 				$('#noHayEspecialistas7')
 						.html(
-								"No hay especialistas de este tipo en el centro médico");
+								"No hay especialistas de este tipo en el centro mï¿½dico");
 			else {
 				for (var i = 0; i < psiquiatras.length; i++) {
 					$("#TablePsiquiatria")
@@ -791,28 +791,28 @@
 			}
 			var espec = boton.parentNode.parentNode.children[1].innerHTML;
 			switch (espec) {
-			case "Podólogo":
+			case "Podï¿½logo":
 				habilitarBotonesTabla("TablePodologo");
 				break;
-			case "Médico de Cabecera":
+			case "Mï¿½dico de Cabecera":
 				habilitarBotonesTabla("TableCabecera");
 				break;
-			case "Traumatólogo":
+			case "Traumatï¿½logo":
 				habilitarBotonesTabla("TableTraumatologo");
 				break;
-			case "Alergología":
+			case "Alergologï¿½a":
 				habilitarBotonesTabla("TableAlergologia");
 				break;
-			case "Geriatría":
+			case "Geriatrï¿½a":
 				habilitarBotonesTabla("TableGeriatria");
 				break;
-			case "Enfermería":
+			case "Enfermerï¿½a":
 				habilitarBotonesTabla("TableEnfermeria");
 				break;
-			case "Pediatría":
+			case "Pediatrï¿½a":
 				habilitarBotonesTabla("TablePediatria");
 				break;
-			case "Psiquiatría":
+			case "Psiquiatrï¿½a":
 				habilitarBotonesTabla("TablePsiquiatria");
 				break;
 			}

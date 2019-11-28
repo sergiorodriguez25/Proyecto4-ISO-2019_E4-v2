@@ -80,8 +80,8 @@
 					<div class="dropdown-menu" aria-labelledby="dropdown01">
 						<a class="dropdown-item" href="#">Mi Perfil</a> <a
 							class="dropdown-item" data-toggle="modal"
-							data-target="#informacion">Información</a> <a
-							class="dropdown-item" href="/">Cerrar sesión</a>
+							data-target="#informacion">Informaciï¿½n</a> <a
+							class="dropdown-item" href="/">Cerrar sesiï¿½n</a>
 					</div></li>
 			</ul>
 		</div>
@@ -97,21 +97,21 @@
 
 						<div class="card">
 							<div class="card-body">
-								<h4>Gestor del centro médico</h4>
+								<h4>Gestor del centro mï¿½dico</h4>
 								<p>
-									Se encuentra en la página de gestión del centro. Para obtener
-									información sobre el uso de las diferentes funcionalidades de
-									las que dispone presione el siguiente botón
+									Se encuentra en la pï¿½gina de gestiï¿½n del centro. Para obtener
+									informaciï¿½n sobre el uso de las diferentes funcionalidades de
+									las que dispone presione el siguiente botï¿½n
 									<button type="button" class="btn btn-primary"
 										data-toggle="modal" data-target="#informacion">
-										Información</button>
+										Informaciï¿½n</button>
 								<div class="modal fade" id="informacion" tabindex="-1"
 									role="dialog" aria-labelledby="exampleModalLongTitle"
 									aria-hidden="true">
 									<div class="modal-dialog" role="document">
 										<div class="modal-content">
 											<div class="modal-header">
-												<h5 class="modal-title" id="exampleModalLongTitle">Información</h5>
+												<h5 class="modal-title" id="exampleModalLongTitle">Informaciï¿½n</h5>
 												<button type="button" class="close" data-dismiss="modal"
 													aria-label="Close">
 													<span aria-hidden="true">&times;</span>
@@ -121,20 +121,20 @@
 												En esta vista usted cuenta con tres tablas:
 												<h5></h5>
 												<h5>Usuarios externos</h5>
-												En esta tabla usted podrá asignar su centro médico,
-												convertir en médico y/o en gestor de su centro médico al
-												usuario seleccionado a través de los diferentes botones que
+												En esta tabla usted podrï¿½ asignar su centro mï¿½dico,
+												convertir en mï¿½dico y/o en gestor de su centro mï¿½dico al
+												usuario seleccionado a travï¿½s de los diferentes botones que
 												puede observar en la tabla mencionada.
 												<h5></h5>
 												<h5>Pacientes del centro</h5>
-												En esta tabla usted podrá convertir en médico y/o en gestor
-												de su centro médico al usuario seleccionado, también podrá
-												ver su calendario a través de los diferentes botones que
+												En esta tabla usted podrï¿½ convertir en mï¿½dico y/o en gestor
+												de su centro mï¿½dico al usuario seleccionado, tambiï¿½n podrï¿½
+												ver su calendario a travï¿½s de los diferentes botones que
 												puede observar en la tabla mencionada.
 												<h5></h5>
-												<h5>Médicos del centro</h5>
-												En esta tabla usted podrá gestionar las citas(modificar o
-												eliminar) del médico de su centro médico, a través de los
+												<h5>Mï¿½dicos del centro</h5>
+												En esta tabla usted podrï¿½ gestionar las citas(modificar o
+												eliminar) del mï¿½dico de su centro mï¿½dico, a travï¿½s de los
 												diferentes botones que puede observar en la tabla
 												mencionada.
 											</div>
@@ -171,7 +171,7 @@
 				<li class="nav-item"><a class="nav-link" data-toggle="tab"
 					href="#menu2">Pacientes Del Centro</a></li>
 				<li class="nav-item"><a class="nav-link" data-toggle="tab"
-					href="#menu3">Médicos del Centro</a></li>
+					href="#menu3">Mï¿½dicos del Centro</a></li>
 			</ul>
 
 			<div class="tab-content">
@@ -179,9 +179,9 @@
 					<div>
 						<br></br>
 					</div>
-					<h3>Gestión de Usuarios Externos</h3>
+					<h3>Gestiï¿½n de Usuarios Externos</h3>
 					<strong class="d-inline-block mb-2 text-primary center">Pacientes
-						externos al Centro Médico</strong>
+						externos al Centro Mï¿½dico</strong>
 					<div class="row d-flex justify-content-center">
 						<div class="container">
 							<table id="TablaUsuarios" class="table table-bordered">
@@ -189,7 +189,7 @@
 									<tr class="table-primary">
 										<td align="center" scope="col"><b>DNI</b></td>
 										<td align="center" scope="col"><b>Nombre</b></td>
-										<td align="center" scope="col"><b>Centro Médico</b></td>
+										<td align="center" scope="col"><b>Centro Mï¿½dico</b></td>
 									</tr>
 								</thead>
 							</table>
@@ -200,9 +200,9 @@
 					<div>
 						<br></br>
 					</div>
-					<h3>Gestión de Pacientes Del Centro Médico</h3>
+					<h3>Gestiï¿½n de Pacientes Del Centro Mï¿½dico</h3>
 					<strong class="d-inline-block mb-2 text-success">Pacientes
-						del Centro Médico</strong>
+						del Centro Mï¿½dico</strong>
 					<div class="row d-flex justify-content-center">
 						<div class="container">
 							<table id="TablaUsuariosCentro" class="table table-bordered">
@@ -210,7 +210,7 @@
 									<tr class="table-primary">
 										<td align="center" scope="col"><b>DNI</b></td>
 										<td align="center" scope="col"><b>Nombre</b></td>
-										<td align="center" scope="col"><b>Centro Médico</b></td>
+										<td align="center" scope="col"><b>Centro Mï¿½dico</b></td>
 									</tr>
 								</thead>
 							</table>
@@ -221,9 +221,9 @@
 					<div>
 						<br></br>
 					</div>
-					<h3>Gestión de Médicos Del Centro</h3>
+					<h3>Gestiï¿½n de Mï¿½dicos Del Centro</h3>
 					<div class="row mb-2">
-						<strong class="d-inline-block mb-2 text-primary center">Médicos
+						<strong class="d-inline-block mb-2 text-primary center">Mï¿½dicos
 							del Centro</strong>
 						<div class="row d-flex justify-content-center">
 							<div class="container">
@@ -232,9 +232,9 @@
 										<tr class="table-primary">
 											<td align="center" scope="col"><b>DNI</b></td>
 											<td align="center" scope="col"><b>Nombre</b></td>
-											<td align="center" scope="col"><b>Centro Médico</b>
+											<td align="center" scope="col"><b>Centro Mï¿½dico</b>
 											<td align="center" scope="col"><b>Especialidad</b>
-											<td align="center" scope="col"><b>Teléfono</b></td>
+											<td align="center" scope="col"><b>Telï¿½fono</b></td>
 										</tr>
 									</thead>
 								</table>
@@ -268,44 +268,44 @@
 							pedirTodosLosUsuarios();
 							$('#pestanas').tab('show');
 							/*
-							 * Control para que no acceda a travis de la url a alguna página que no sea el home
-							 * Hay que ponerlo en todos los jsp que se hagan próximamente
+							 * Control para que no acceda a travis de la url a alguna pï¿½gina que no sea el home
+							 * Hay que ponerlo en todos los jsp que se hagan prï¿½ximamente
 							 */
 							var referrer = document.referrer;
 							if (referrer != 'http://localhost:8080/'
-									&& referrer != 'https://the-good-health.herokuapp.com/'
-									&& referrer != 'http://the-good-health.herokuapp.com/'
-									&& referrer != 'the-good-health.herokuapp.com/'
+									&& referrer != 'https://sgc-e4.herokuapp.com/'
+									&& referrer != 'http://sgc-e4.herokuapp.com/'
+									&& referrer != 'sgc-e4.herokuapp.com/'
 									&& referrer != 'http://localhost:8080/registro'
-									&& referrer != 'https://the-good-health.herokuapp.com/registro'
-									&& referrer != 'http://the-good-health.herokuapp.com/registro'
-									&& referrer != 'the-good-health.herokuapp.com/registro'
+									&& referrer != 'https://sgc-e4.herokuapp.com/registro'
+									&& referrer != 'http://sgc-e4.herokuapp.com/registro'
+									&& referrer != 'sgc-e4.herokuapp.com/registro'
 									&& referrer != 'http://localhost:8080/citas'
-									&& referrer != 'https://the-good-health.herokuapp.com/citas'
-									&& referrer != 'http://the-good-health.herokuapp.com/citas'
-									&& referrer != 'the-good-health.herokuapp.com/citas'
+									&& referrer != 'https://sgc-e4.herokuapp.com/citas'
+									&& referrer != 'http://sgc-e4.herokuapp.com/citas'
+									&& referrer != 'sgc-e4.herokuapp.com/citas'
 									&& referrer != 'http://localhost:8080/formularioPaciente'
-									&& referrer != 'https://the-good-health.herokuapp.com/formularioPaciente'
-									&& referrer != 'http://the-good-health.herokuapp.com/formularioPaciente'
-									&& referrer != 'the-good-health.herokuapp.com/formularioPaciente'
+									&& referrer != 'https://sgc-e4.herokuapp.com/formularioPaciente'
+									&& referrer != 'http://sgc-e4.herokuapp.com/formularioPaciente'
+									&& referrer != 'sgc-e4.herokuapp.com/formularioPaciente'
 									&& referrer != 'http://localhost:8080/citasGestor'
-									&& referrer != 'https://the-good-health.herokuapp.com/citasGestor'
-									&& referrer != 'http://the-good-health.herokuapp.com/citasGestor'
-									&& referrer != 'the-good-health.herokuapp.com/citasGestor'
+									&& referrer != 'https://sgc-e4.herokuapp.com/citasGestor'
+									&& referrer != 'http://sgc-e4.herokuapp.com/citasGestor'
+									&& referrer != 'sgc-e4.herokuapp.com/citasGestor'
 									&& referrer != 'http://localhost:8080/medicoGestor'
-									&& referrer != 'https://the-good-health.herokuapp.com/medicoGestor'
-									&& referrer != 'http://the-good-health.herokuapp.com/medicoGestor'
-									&& referrer != 'the-good-health.herokuapp.com/medicoGestor'
+									&& referrer != 'https://sgc-e4.herokuapp.com/medicoGestor'
+									&& referrer != 'http://sgc-e4.herokuapp.com/medicoGestor'
+									&& referrer != 'sgc-e4.herokuapp.com/medicoGestor'
 									&& referrer != 'http://localhost:8080/formularioTrabajador'
-									&& referrer != 'https://the-good-health.herokuapp.com/formularioTrabajador'
-									&& referrer != 'http://the-good-health.herokuapp.com/formularioTrabajador'
-									&& referrer != 'the-good-health.herokuapp.com/formularioTrabajador'
+									&& referrer != 'https://sgc-e4.herokuapp.com/formularioTrabajador'
+									&& referrer != 'http://sgc-e4.herokuapp.com/formularioTrabajador'
+									&& referrer != 'sgc-e4.herokuapp.com/formularioTrabajador'
 									&& referrer != 'http://localhost:8080/formularioGestor'
-									&& referrer != 'https://the-good-health.herokuapp.com/formularioGestor'
-									&& referrer != 'http://the-good-health.herokuapp.com/formularioGestor'
-									&& referrer != 'the-good-health.herokuapp.com/formularioGestor'
+									&& referrer != 'https://sgc-e4.herokuapp.com/formularioGestor'
+									&& referrer != 'http://sgc-e4.herokuapp.com/formularioGestor'
+									&& referrer != 'sgc-e4.herokuapp.com/formularioGestor'
 									&& referrer != 'http://localhost:8080/calendarioGlobal'
-									&& referrer != 'https://the-good-health.herokuapp.com/calendarioGlobal') {
+									&& referrer != 'https://sgc-e4.herokuapp.com/calendarioGlobal') {
 								var forma = document.forms[0];
 								forma.action = "/error";
 								forma.submit();
@@ -377,7 +377,7 @@
 											+ '<button id=\'botonConvertirTrabajador'
 											+ i
 											+ '\' class=\'btn btn-primary \' onClick="funcionConvertirMedico(this)">'
-											+ 'Convertir en Médico'
+											+ 'Convertir en Mï¿½dico'
 											+ '</button> '
 											+ '</td>'
 											+ '<td align="center" style="dislay: none;">'
@@ -406,7 +406,7 @@
 											+ '<button id=\'botonConvertirTrabajadorCM'
 											+ i
 											+ '\' class=\'btn btn-primary \' onClick="funcionConvertirMedico(this)">'
-											+ 'Convertir en Médico'
+											+ 'Convertir en Mï¿½dico'
 											+ '</button> '
 											+ '</td>'
 											+ '<td align="center" style="dislay: none;">'

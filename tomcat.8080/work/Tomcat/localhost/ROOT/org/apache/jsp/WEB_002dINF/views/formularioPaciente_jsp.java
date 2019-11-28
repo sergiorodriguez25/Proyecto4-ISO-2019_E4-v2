@@ -498,9 +498,9 @@ public final class formularioPaciente_jsp extends org.apache.jasper.runtime.Http
       out.write("\t\t\t\t\t\t\t */\r\n");
       out.write("\t\t\t\t\t\t\tvar referrer = document.referrer;\r\n");
       out.write("\t\t\t\t\t\t\tif (referrer != 'http://localhost:8080/gestor'\r\n");
-      out.write("\t\t\t\t\t\t\t\t\t&& referrer != 'https://the-good-health.herokuapp.com/gestor'\r\n");
-      out.write("\t\t\t\t\t\t\t\t\t\t&& referrer != 'http://the-good-health.herokuapp.com/gestor'\r\n");
-      out.write("\t\t\t\t\t\t\t\t\t\t\t&& referrer != 'the-good-health.herokuapp.com/gestor') {\r\n");
+      out.write("\t\t\t\t\t\t\t\t\t&& referrer != 'https://sgc-e4.herokuapp.com/gestor'\r\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t&& referrer != 'http://sgc-e4.herokuapp.com/gestor'\r\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t&& referrer != 'sgc-e4.herokuapp.com/gestor') {\r\n");
       out.write("\t\t\t\t\t\t\t\tvar forma = document.forms[0];\r\n");
       out.write("\t\t\t\t\t\t\t\tforma.action = \"/error\";\r\n");
       out.write("\t\t\t\t\t\t\t\tforma.submit();\r\n");
