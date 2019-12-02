@@ -453,7 +453,14 @@
 											+ j
 											+ '\' class=\'btn btn-primary \' onClick="funcionGestionarCitas(this)">'
 											+ 'Gestionar Citas' + '</button> '
+											+ '</td>'
+											+ '<td align="center" style="dislay: none;">'
+											+ '<button id=\'botonModificarHorarios'
+											+ j
+											+ '\' class=\'btn btn-primary \' onClick="funcionGestionarCitas(this)">'
+											+ 'Modificar Horario' + '</button> '
 											+ '</td></tr>');
+											
 				}
 			}
 		}
