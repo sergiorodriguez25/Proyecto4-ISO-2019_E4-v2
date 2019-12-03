@@ -88,8 +88,8 @@
 					<div class="dropdown-menu" aria-labelledby="dropdown01">
 						<a class="dropdown-item" href="#">Mi Perfil</a> <a
 							class="dropdown-item" data-toggle="modal"
-							data-target="#informacion">Información</a> <a
-							class="dropdown-item" href="/">Cerrar sesión</a>
+							data-target="#informacion">InformaciÃ³n</a> <a
+							class="dropdown-item" href="/">Cerrar sesiÃ³n</a>
 					</div></li>
 			</ul>
 		</div>
@@ -109,8 +109,8 @@
 						<div class="col-md-8">
 							<div class="card">
 								<div class="card-body">
-									<h4>Formulario de Creación del nuevo Gestor</h4>
-									<p>Para crear el nuevo Gestor selecciona el centro médico
+									<h4>Formulario de CreaciÃ³n del nuevo Gestor</h4>
+									<p>Para crear el nuevo Gestor selecciona el centro mÃ©dico
 										del que va a ser gestor.</p>
 									<div class="modal fade" id="informacion" tabindex="-1"
 										role="dialog" aria-labelledby="exampleModalLongTitle"
@@ -118,7 +118,7 @@
 										<div class="modal-dialog" role="document">
 											<div class="modal-content">
 												<div class="modal-header">
-													<h5 class="modal-title" id="exampleModalLongTitle">Información</h5>
+													<h5 class="modal-title" id="exampleModalLongTitle">InformaciÃ³n</h5>
 													<button type="button" class="close" data-dismiss="modal"
 														aria-label="Close">
 														<span aria-hidden="true">&times;</span>
@@ -128,8 +128,8 @@
 													En esta vista usted puede:
 													<h5></h5>
 													<h5>Crear nuevo gestor</h5>
-													Para ello usted debe seleccionar el centro médico al que
-													pertenecerá el gestor y presionar el botón de confirmar.
+													Para ello usted debe seleccionar el centro mÃ©dico al que
+													pertenecerÃ¡ el gestor y presionar el botÃ³n de confirmar.
 												</div>
 												<div class="modal-footer">
 													<button type="button" class="btn btn-secondary"
@@ -156,16 +156,16 @@
 							<br></br>
 						</div>
 
-						<label for="cen">Seleccione el centro médico en el que
-							trabajará el Gestor</label>
+						<label for="cen">Seleccione el centro mÃ©dico en el que
+							trabajarÃ¡ el Gestor</label>
 						<div class="col-md-6 mb-3">
 							<input name="centro" id="centroMedico" type="text" required
-								class="form-control" placeholder="Centro Médico"> <br></br>
+								class="form-control" placeholder="Centro MÃ©dico"> <br></br>
 
 							<hr class="mb-4">
 							<a id="confirmarGestor" class="btn btn-primary btn-large"
 								type="submit">Confirmar</a> <a href="/gestor"
-								class="btn btn-primary btn-large" type="submit">Volver atrás</a>
+								class="btn btn-primary btn-large" type="submit">Volver atrÃ¡s</a>
 						</div>
 					</div>
 				</div>
@@ -203,8 +203,8 @@
 
 			// 							$('DNIMedico').html(dni);
 			/*
-			 * Control para que no acceda a travï¿½s de la url a alguna pï¿½gina que no sea el home
-			 * Hay que ponerlo en todos los jsp que se hagan prï¿½ximamente
+			 * Control para que no acceda a travÃ©s de la url a alguna pÃ¡gina que no sea el home
+			 * Hay que ponerlo en todos los jsp que se hagan prÃ³ximamente
 			 */
 			// 							var referrer = document.referrer;
 			// 							if (referrer != 'http://localhost:8080/citas'
@@ -289,7 +289,7 @@
 			document.getElementById("fecha").style.display = 'none';
 			if (texto == '') {
 				document.getElementById("fecha").style.display = 'inline';
-				$('#fecha').html("Tiene que escoger un día para su cita.");
+				$('#fecha').html("Tiene que escoger un dÃ­a para su cita.");
 				$('#fecha').css("color", "red");
 				return 1;
 			}

@@ -37,8 +37,8 @@
 				<div class="dropdown-menu" aria-labelledby="dropdown01">
 					<a class="dropdown-item" href="#">Mi Perfil</a> <a
 						class="dropdown-item" data-toggle="modal"
-						data-target="#informacion">Información</a> <a
-						class="dropdown-item" href="/">Cerrar sesión</a>
+						data-target="#informacion">InformaciÃ³n</a> <a
+						class="dropdown-item" href="/">Cerrar sesiÃ³n</a>
 				</div></li>
 		</ul>
 	</div>
@@ -107,7 +107,7 @@
 			array[0] = "Martes";
 			break;
 		case "Wed":
-			array[0] = "Miércoles";
+			array[0] = "MiÃ©rcoles";
 			break;
 		case "Thu":
 			array[0] = "Jueves";
@@ -116,7 +116,7 @@
 			array[0] = "Viernes";
 			break;
 		case "Sat":
-			array[0] = "Sábado";
+			array[0] = "SÃ¡bado";
 			break;
 		case "Sun":
 			array[0] = "Domingo";
@@ -165,7 +165,7 @@
 		//Esta es la fecha que hay que mandar para comprobar con las citas
 		var fechaMontada = array[2] + "/" + array[1] + "/" + array[3];
 		console.log(fechaMontada);
-		//Este es el día que voy a mirar por si hay que ver el horario
+		//Este es el dÃ­a que voy a mirar por si hay que ver el horario
 		var diaSemana = array[0];
 		console.log(diaSemana);
 
@@ -212,7 +212,7 @@
 		if (jsoCitas.Citas.length == 0)
 			$('#listaCitas')
 					.append(
-							"<a id=filas class=list-group-item list-group-item-action flex-column align-items-start active><div class=d-flex w-100 justify-content-between></div><p class=mb-1><b>No hay citas pendientes para este día.</b></p></a>");
+							"<a id=filas class=list-group-item list-group-item-action flex-column align-items-start active><div class=d-flex w-100 justify-content-between></div><p class=mb-1><b>No hay citas pendientes para este dÃ­a.</b></p></a>");
 		else {
 			for (var i = 0; i < jsoCitas.Citas.length; i++) {
 				var fecha = jsoCitas.Citas[i].dia;
@@ -224,7 +224,7 @@
 
 				$('#listaCitas')
 						.append(
-								"<a id=filas class=list-group-item list-group-item-action flex-column align-items-start active><div class=d-flex w-100 justify-content-between><h5 class=mb-1>Día: "
+								"<a id=filas class=list-group-item list-group-item-action flex-column align-items-start active><div class=d-flex w-100 justify-content-between><h5 class=mb-1>DÃ­a: "
 										+ fecha
 										+ ", Hora: "
 										+ hora

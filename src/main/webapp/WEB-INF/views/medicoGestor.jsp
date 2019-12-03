@@ -77,8 +77,8 @@
 					<div class="dropdown-menu" aria-labelledby="dropdown01">
 						<a class="dropdown-item" href="#">Mi Perfil</a> <a
 							class="dropdown-item" data-toggle="modal"
-							data-target="#informacion">Informaci�n</a> <a
-							class="dropdown-item" href="/">Cerrar sesi�n</a>
+							data-target="#informacion">Información</a> <a
+							class="dropdown-item" href="/">Cerrar sesión</a>
 					</div></li>
 			</ul>
 		</div>
@@ -95,16 +95,16 @@
 						<div class="card">
 							<div class="card-body">
 								<h4>Citas de pacientes</h4>
-								<p>Bienvenido/a a la p�gina de "Citas de pacientes" en la
-									que aparecen todas las citas que el m�dico seleccionado tiene
-									programadas ordenadas por d�as.</p>
+								<p>Bienvenido/a a la página de "Citas de pacientes" en la
+									que aparecen todas las citas que el médico seleccionado tiene
+									programadas ordenadas por días.</p>
 								<div class="modal fade" id="informacion" tabindex="-1"
 									role="dialog" aria-labelledby="exampleModalLongTitle"
 									aria-hidden="true">
 									<div class="modal-dialog" role="document">
 										<div class="modal-content">
 											<div class="modal-header">
-												<h5 class="modal-title" id="exampleModalLongTitle">Informaci�n</h5>
+												<h5 class="modal-title" id="exampleModalLongTitle">Información</h5>
 												<button type="button" class="close" data-dismiss="modal"
 													aria-label="Close">
 													<span aria-hidden="true">&times;</span>
@@ -114,16 +114,16 @@
 												En esta vista usted puede:
 												<h5></h5>
 												<h5>Volver a gestor</h5>
-												A trav�s de este bot�n usted puede volver a su vista de
+												A través de este botón usted puede volver a su vista de
 												gestor.
 												<h5></h5>
 												<h5>Modificar cita</h5>
-												A trav�s de este bot�n usted podr� modificar una de las
-												pr�ximas citas del m�dico.
+												A través de este botón usted podrá modificar una de las
+												próximas citas del médico.
 												<h5></h5>
 												<h5>Eliminar cita</h5>
-												A trav�s de este bot�n usted podr� eliminar una de las
-												pr�ximas citas del m�dico.
+												A través de este botón usted podrá eliminar una de las
+												próximas citas del médico.
 											</div>
 											<div class="modal-footer">
 												<button type="button" class="btn btn-secondary"
@@ -133,7 +133,7 @@
 									</div>
 								</div>
 								<p>
-									Para volver a la p�gina principal de Gestor pulse el bot�n <a
+									Para volver a la página principal de Gestor pulse el botón <a
 										href="gestor" class="btn btn-primary btn-large" type="submit">Gestor</a>
 								</p>
 							</div>
@@ -198,8 +198,8 @@
 		jQuery(document).ready(function($) {
     		enviardni();
 			/*
-			 * Control para que no acceda a travis de la url a alguna p�gina que no sea el home
-			 * Hay que ponerlo en todos los jsp que se hagan pr�ximamente
+			 * Control para que no acceda a travis de la url a alguna pagina que no sea el home
+			 * Hay que ponerlo en todos los jsp que se hagan proximamente
 			 */
 			var referrer = document.referrer;
 			if (referrer != 'http://localhost:8080/'
@@ -283,8 +283,8 @@
 			var dniMedico = jsoMedi.Medico[0].DNI;
 
 			swal({
-				  title: "�Quiere eliminar esta cita?",
-				  text: "Si pulsa el bot�n OK dejar� de tener asignada la cita",
+				  title: "¿Quiere eliminar esta cita?",
+				  text: "Si pulsa el botón OK dejará de tener asignada la cita",
 				  icon: "warning",
 				  buttons: true,
 				  dangerMode: true,
