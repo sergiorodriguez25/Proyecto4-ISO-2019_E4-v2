@@ -172,6 +172,8 @@
 					href="#menu2">Pacientes Del Centro</a></li>
 				<li class="nav-item"><a class="nav-link" data-toggle="tab"
 					href="#menu3">M�dicos del Centro</a></li>
+				<li class="nav-item"><a class="nav-link" data-toggle="tab"
+					href="#menu4">Usuarios del Centro</a></li>	
 			</ul>
 
 			<div class="tab-content">
@@ -239,6 +241,29 @@
 									</thead>
 								</table>
 							</div>
+						</div>
+					</div>
+				</div>
+				<div id="menu4" class="tab-pane fade">
+					<div>
+						<br></br>
+					</div>
+					<h3>Gestión de Usuarios del Centro Médico</h3>
+					<strong class="d-inline-block mb-2 text-success">Usuarios del centro médico</strong>
+					<label for="inputUsuarioBuscado" class="sr-only">Usuario a buscar</label>
+					<input type="text" id="inputUsuarioDNI" name = "UsuarioDNI" class="form-control" placeholder="DNI o nombre a buscar" required autofocus>
+					<br></br>
+					<div class="row d-flex justify-content-center">
+						<div class="container">
+							<table id="TablaUsuariosCentroMedico" class="table table-bordered">
+								<thead>
+									<tr class="table-primary">
+										<td align="center" scope="col"><b>DNI</b></td>
+										<td align="center" scope="col"><b>Nombre</b></td>
+										<td align="center" scope="col"><b>Centro médico</b></td>
+									</tr>
+								</thead>
+							</table>
 						</div>
 					</div>
 				</div>
@@ -423,6 +448,32 @@
 											+ 'Convertir en Gestor'
 											+ '</button> ' + '</td></tr>');
 				}
+
+				if ((jsoUsuarios.Pacientes[i].centroMedico == centroMedicoGestor) && (jsoUsuarios.Pacientes[i].DNI != jsoUsuarios.Medicos[i].DNIMedico)) {
+					$("#TablaUsuariosCentroMedico")
+							.append(
+									'<tr><td align="center" style="dislay: none;">'
+											+ jsoUsuarios.Pacientes[i].DNI
+											+ '</td>'
+											+ '<td align="center" style="dislay: none;">'
+											+ jsoUsuarios.Pacientes[i].nombre
+											+ " "
+											+ jsoUsuarios.Pacientes[i].apellidos
+											+ '</td>'
+											+ '<td align="center" style="dislay: none;">'
+											+ jsoUsuarios.Pacientes[i].centroMedico
+											+ '</td>'
+											+ '<td align="center" style="dislay: none;">'
+											+ '</td></tr>');
+				}
+				/* if($("inputUsuarioBuscado") != null){
+					for (var j = 0; j < $("tablaUsuariosCentroMedico").length; j++) {
+						if(($("inputUsuarioBuscado") == $("tablaUsuariosCentroMedico")[j].DNI) || ($("inputUsuarioBuscado") == $("tablaUsuariosCentroMedico")[j].nombre)){
+
+						}
+					}
+				} */
+				
 			}
 
 			for (var j = 0; j < jsoUsuarios.Medicos.length; j++) {
@@ -569,6 +620,11 @@
 			$('#nombreApellidos').html(
 					jsoUser.resultado.usuario.nombre + " "
 							+ jsoUser.resultado.usuario.apellidos);
+		}
+
+		function buscarUsuarioPorDNI(boton){
+			var jsoUser = JSON.parse(sessionStorage.usuario);
+			
 		}
 	</script>
 </body>
