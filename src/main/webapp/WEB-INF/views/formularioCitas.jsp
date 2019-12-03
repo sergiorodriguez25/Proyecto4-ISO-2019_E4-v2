@@ -91,8 +91,8 @@
 					<div class="dropdown-menu" aria-labelledby="dropdown01">
 						<a class="dropdown-item" href="#">Mi Perfil</a> <a
 							class="dropdown-item" data-toggle="modal"
-							data-target="#informacion">Informaci�n</a> <a
-							class="dropdown-item" href="/">Cerrar sesi�n</a>
+							data-target="#informacion">Información</a> <a
+							class="dropdown-item" href="/">Cerrar sesión</a>
 					</div></li>
 			</ul>
 		</div>
@@ -114,8 +114,8 @@
 								<div class="card-body">
 									<h4>Formulario de Citas</h4>
 									<p>Para pedir una cita, rellene todos los campos que
-										encontrar� a continuaci�n; una vez hecho esto, para solicitar
-										la cita deseada, pulse en el bot�n de Solicitar cita.</p>
+										encontrará a continuación; una vez hecho esto, para solicitar
+										la cita deseada, pulse en el botón de Solicitar cita.</p>
 								</div>
 								<div class="modal fade" id="informacion" tabindex="-1"
 									role="dialog" aria-labelledby="exampleModalLongTitle"
@@ -123,7 +123,7 @@
 									<div class="modal-dialog" role="document">
 										<div class="modal-content">
 											<div class="modal-header">
-												<h5 class="modal-title" id="exampleModalLongTitle">Informaci�n</h5>
+												<h5 class="modal-title" id="exampleModalLongTitle">Información</h5>
 												<button type="button" class="close" data-dismiss="modal"
 													aria-label="Close">
 													<span aria-hidden="true">&times;</span>
@@ -133,7 +133,7 @@
 												En esta vista usted puede:
 												<h5></h5>
 												<h5>Solicitar cita</h5>
-												A trav�s de este bot�n usted podr� solicitar la cita con los
+												A través de este botón usted podrá solicitar la cita con los
 												datos que previamente haya rellenado.
 											</div>
 											<div class="modal-footer">
@@ -164,9 +164,9 @@
 						<br></br>
 
 						<div class="col-md-6 mb-3">
-							<label for="fecha_ini">D�a</label> <input disabled type="text"
+							<label for="fecha_ini">Día</label> <input disabled type="text"
 								id="fecha_ini" class="form-control">
-							<div class="invalid-feedback">Informaci�n necesaria.</div>
+							<div class="invalid-feedback">Información necesaria.</div>
 							<label id="fecha"></label>
 						</div>
 						<br></br>
@@ -183,7 +183,7 @@
 						<hr class="mb-4">
 						<a id="pedircita" class="btn btn-primary btn-large" type="submit">Solicitar
 							cita</a> <a href="/citas" class="btn btn-primary btn-large"
-							type="submit">Volver atr�s</a>
+							type="submit">Volver atrás</a>
 						</form>
 					</div>
 				</div>
@@ -216,8 +216,8 @@
 				.ready(
 						function($) {
 							/*
-							 * Control para que no acceda a trav�s de la url a alguna p�gina que no sea el home
-							 * Hay que ponerlo en todos los jsp que se hagan pr�ximamente
+							 * Control para que no acceda a través de la url a alguna página que no sea el home
+							 * Hay que ponerlo en todos los jsp que se hagan próximamente
 							 */
 							var referrer = document.referrer;
 							if (referrer != 'http://localhost:8080/citas'
@@ -234,7 +234,7 @@
 								swal(
 										{
 											title : "Lo sentimos",
-											text : "A�n no puede solicitar citas, el gestor tiene que asignarle un centro m�dico y el grupo de m�dicos que le atender�n en dicho centro. Disculpe las molestias",
+											text : "Aún no puede solicitar citas, el gestor tiene que asignarle un centro médico y el grupo de médicos que le atenderán en dicho centro. Disculpe las molestias",
 											icon : "error",
 										}).then(function() {
 									window.location.href = "/citas";
@@ -294,10 +294,10 @@
 												weekday[0] = "Domingo";
 												weekday[1] = "Lunes";
 												weekday[2] = "Martes";
-												weekday[3] = "Mi�rcoles";
+												weekday[3] = "Miércoles";
 												weekday[4] = "Jueves";
 												weekday[5] = "Viernes";
-												weekday[6] = "S�bado";
+												weekday[6] = "Sábado";
 												var dateString = $('#fecha_ini')
 														.val();
 												var dateParts = dateString
@@ -326,8 +326,8 @@
 														k++;
 													}
 												}
-												//Filtrar aqu� haciendo una petici�n que me devuelva las citas que haya ese d�a de ese m�dico
-												//Buscar en la BD por dniMedico y por d�a. Conseguir las horas y las que coincidan con horas disponibles
+												//Filtrar aquí haciendo una petición que me devuelva las citas que haya ese día de ese médico
+												//Buscar en la BD por dniMedico y por día. Conseguir las horas y las que coincidan con horas disponibles
 												//Se eliminan del vector y ya se guarda el sessionStorage con las horas buenas
 												var dniMedico = jsoHorario.horarioMedico.DNI;
 												getHorasCitasDiaSeleccionado(
@@ -364,7 +364,7 @@
 
 														$('#noHayHora')
 																.html(
-																		"No hay horas disponibles para este d�a, seleccione otro.");
+																		"No hay horas disponibles para este día, seleccione otro.");
 														$('#noHayHora').css(
 																"color", "red");
 													}
@@ -529,7 +529,7 @@
 			console.log("Cita OK");
 			swal({
 				title : "Solicitud recibida",
-				text : "Has a�adido una cita",
+				text : "Has añadido una cita",
 				icon : "success",
 			}).then(function() {
 				window.location.href = "/citas";
@@ -558,7 +558,7 @@
 			document.getElementById("fecha").style.display = 'none';
 			if (texto == '') {
 				document.getElementById("fecha").style.display = 'inline';
-				$('#fecha').html("Tiene que escoger un d�a para su cita.");
+				$('#fecha').html("Tiene que escoger un día para su cita.");
 				$('#fecha').css("color", "red");
 				return 1;
 			}

@@ -80,8 +80,8 @@
 					<div class="dropdown-menu" aria-labelledby="dropdown01">
 						<a class="dropdown-item" href="#">Mi Perfil</a> <a
 							class="dropdown-item" data-toggle="modal"
-							data-target="#informacion">Informaci�n</a> <a
-							class="dropdown-item" href="/">Cerrar sesi�n</a>
+							data-target="#informacion">Información</a> <a
+							class="dropdown-item" href="/">Cerrar sesión</a>
 					</div></li>
 			</ul>
 		</div>
@@ -99,14 +99,14 @@
 							<div class="card-body">
 								<h4>Mis Citas</h4>
 								<p>
-									Bienvenido/a a la p�gina de "Mis citas" en la que aparecen
+									Bienvenido/a a la página de "Mis citas" en la que aparecen
 									todas las citas que tiene programadas. Si desea modificar(<img
 										src="https://image.flaticon.com/icons/png/512/23/23187.png"
 										class="img-fluid rounded" width="25" height="25">) o
 									anular(<img
 										src="https://image.flaticon.com/icons/png/512/39/39220.png"
 										class="img-fluid rounded" width="25" height="25">) una
-									cita, pulse el bot�n de la acci�n que quiera realizar y que se
+									cita, pulse el botón de la acción que quiera realizar y que se
 									encuentra a la derecha de la cita con la que quiera
 									interactuar.
 								</p>
@@ -116,7 +116,7 @@
 									<div class="modal-dialog" role="document">
 										<div class="modal-content">
 											<div class="modal-header">
-												<h5 class="modal-title" id="exampleModalLongTitle">Informaci�n</h5>
+												<h5 class="modal-title" id="exampleModalLongTitle">Información</h5>
 												<button type="button" class="close" data-dismiss="modal"
 													aria-label="Close">
 													<span aria-hidden="true">&times;</span>
@@ -126,7 +126,7 @@
 												En esta vista usted puede:
 												<h5></h5>
 												<h5>Pedir cita</h5>
-												Solicitar una cita, para ello deber� tener un centro m�dico
+												Solicitar una cita, para ello deberá tener un centro médico
 												asignado.
 												<h5></h5>
 												<h5>
@@ -134,16 +134,16 @@
 														src="https://image.flaticon.com/icons/png/512/23/23187.png"
 														class="img-fluid rounded" width="25" height="25">)
 												</h5>
-												A trav�s de este bot�n usted podr� modificar una de sus
-												pr�ximas citas, el d�a y su hora.
+												A través de este botón usted podrá modificar una de sus
+												próximas citas, el día y su hora.
 												<h5></h5>
 												<h5>
 													Eliminar cita(<img
 														src="https://image.flaticon.com/icons/png/512/39/39220.png"
 														class="img-fluid rounded" width="25" height="25">)
 												</h5>
-												A trav�s de este bot�n usted podr� eliminar una de sus
-												pr�ximas citas.
+												A través de este botón usted podrá eliminar una de sus
+												próximas citas.
 											</div>
 											<div class="modal-footer">
 												<button type="button" class="btn btn-secondary"
@@ -153,16 +153,16 @@
 									</div>
 								</div>
 								<p>
-									Si desea pedir una cita pulse el bot�n <a
+									Si desea pedir una cita pulse el botón <a
 										href="/formularioCitas" class="btn btn-primary btn-large"
 										type="submit">Pedir Cita</a>
 								</p>
 								<p id="volverMedico">
-									Para volver a la interfaz de M�dico pulse el bot�n <a
-										href="/medico" class="btn btn-primary btn-large" type="submit">M�dico</a>
+									Para volver a la interfaz de Médico pulse el botón <a
+										href="/medico" class="btn btn-primary btn-large" type="submit">Médico</a>
 								</p>
 								<p id="volverGestor">
-									Para volver a la p�gina principal de Gestor pulse el bot�n <a
+									Para volver a la página principal de Gestor pulse el botón <a
 										href="gestor" class="btn btn-primary btn-large" type="submit">Gestor</a>
 								</p>
 							</div>
@@ -194,7 +194,7 @@
 								<td align="center" scope="col"><b>Hora</b></td>
 								<td align="center" scope="col"><b>Fecha</b></td>
 								<td align="center" scope="col"><b>Especialidad</b></td>
-								<td align="center" scope="col"><b>M�dico</b></td>
+								<td align="center" scope="col"><b>Médico</b></td>
 								<td align="center" scope="col"><b>Centro</b></td>
 							</tr>
 						</thead>
@@ -227,8 +227,8 @@
 	<script type="text/javascript">
 	jQuery(document).ready(function($) {
 		/*
-		 * Control para que no acceda a travis de la url a alguna p�gina que no sea el home
-		 * Hay que ponerlo en todos los jsp que se hagan pr�ximamente
+		 * Control para que no acceda a travis de la url a alguna página que no sea el home
+		 * Hay que ponerlo en todos los jsp que se hagan próximamente
 		 */
 		var referrer = document.referrer;
 		if (referrer != 'http://localhost:8080/'
@@ -392,8 +392,8 @@
 			};
 			console.log(data);
 			swal({
-				  title: "�Quiere eliminar esta cita?",
-				  text: "Si pulsa el bot�n OK dejar� de tener asignada la cita",
+				  title: "¿Quiere eliminar esta cita?",
+				  text: "Si pulsa el botón OK dejará de tener asignada la cita",
 				  icon: "warning",
 				  buttons: true,
 				  dangerMode: true,

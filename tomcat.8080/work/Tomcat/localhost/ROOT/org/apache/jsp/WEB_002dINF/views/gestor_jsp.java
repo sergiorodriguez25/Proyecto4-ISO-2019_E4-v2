@@ -529,7 +529,14 @@ public final class gestor_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t\t\t\t\t\t\t\t\t\t+ i\r\n");
       out.write("\t\t\t\t\t\t\t\t\t\t\t+ '\\' class=\\'btn btn-primary \\' onClick=\"funcionConvertirGestor(this)\">'\r\n");
       out.write("\t\t\t\t\t\t\t\t\t\t\t+ 'Convertir en Gestor'\r\n");
-      out.write("\t\t\t\t\t\t\t\t\t\t\t+ '</button> ' + '</td></tr>');\r\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t+ '</button> ' + '</td>'\r\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t+ '<td align=\"center\" style=\"dislay: none;\">'\r\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t+ '<button id=\\'botonModificarCentro'\r\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t+ i\r\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t+ '\\' class=\\'btn btn-primary \\' onClick=\"funcionModificarCentro(this)\">'\r\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t+ 'Cambiar Centro'\r\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t+ '</button> '\r\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t+ '</td></tr>');\r\n");
       out.write("\t\t\t\t}\r\n");
       out.write("\t\t\t}\r\n");
       out.write("\r\n");
