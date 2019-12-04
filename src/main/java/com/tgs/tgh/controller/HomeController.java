@@ -270,6 +270,40 @@ public class HomeController {
 		return "formularioTrabajador";
 	}
 	
+	@RequestMapping(value = "/formularioModificarHorario", method = RequestMethod.GET)
+	public String formHorario() {
+
+		return "formularioModificarHorario";
+	}
+	
+	@CrossOrigin(origins = "*", allowCredentials = "true")
+	@RequestMapping(value = "/formularioModificarHorario", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+	@ResponseBody
+	public String formHorario(@RequestBody Map<String, String> jso) throws Exception {
+		System.out.println(jso);
+		JSONObject resultado = new JSONObject();
+		if(jso.get("tipo").equals("solicitarEspecialidades")) {
+			resultado = Manager.get().getEspecialidades();
+		}
+		else if(jso.get("tipo").equals("enviarDatos")) {
+			String dni = jso.get("DNI");
+			String especialidad = jso.get("especialidad");
+			String horaIni = jso.get("horaInicio");
+			String horaFin = jso.get("horaFin");
+			String dias = jso.get("dias");
+			dias = dias.replace("[", "");
+			dias = dias.replace("]", "");
+			dias = dias.replace("\"", "");
+			System.out.println(dias);
+			String[] diasElegidos = dias.split(",");
+			System.out.println(diasElegidos[0]);
+			String centro = jso.get("centro");
+			System.out.println(centro);
+			resultado = Manager.get().guardarNuevoMedico(dni, especialidad, horaIni, horaFin, diasElegidos, centro);
+		}
+		return resultado.toString();
+	}
+	
 	@CrossOrigin(origins = "*", allowCredentials = "true")
 	@RequestMapping(value = "/formularioTrabajador", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
 	@ResponseBody
