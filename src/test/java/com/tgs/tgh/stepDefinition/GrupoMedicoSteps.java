@@ -10,7 +10,8 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 public class GrupoMedicoSteps {
-	
+
+    
 	ArrayList<String> medicos = new ArrayList<String>();
 	
 	@When("^Se le asigna el grupo medico al paciente$")
