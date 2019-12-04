@@ -37,8 +37,8 @@
 				<div class="dropdown-menu" aria-labelledby="dropdown01">
 					<a class="dropdown-item" href="#">Mi Perfil</a> <a
 						class="dropdown-item" data-toggle="modal"
-						data-target="#informacion">InformaciÃ³n</a> <a
-						class="dropdown-item" href="/">Cerrar sesiÃ³n</a>
+						data-target="#informacion">Información</a> <a
+						class="dropdown-item" href="/">Cerrar sesión</a>
 				</div></li>
 		</ul>
 	</div>
@@ -107,7 +107,7 @@
 			array[0] = "Martes";
 			break;
 		case "Wed":
-			array[0] = "MiÃ©rcoles";
+			array[0] = "Miércoles";
 			break;
 		case "Thu":
 			array[0] = "Jueves";
@@ -116,7 +116,7 @@
 			array[0] = "Viernes";
 			break;
 		case "Sat":
-			array[0] = "SÃ¡bado";
+			array[0] = "Sábado";
 			break;
 		case "Sun":
 			array[0] = "Domingo";

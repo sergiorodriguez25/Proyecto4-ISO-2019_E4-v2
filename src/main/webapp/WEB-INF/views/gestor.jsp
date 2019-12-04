@@ -80,8 +80,8 @@
 					<div class="dropdown-menu" aria-labelledby="dropdown01">
 						<a class="dropdown-item" href="#">Mi Perfil</a> <a
 							class="dropdown-item" data-toggle="modal"
-							data-target="#informacion">Informaci√≥n</a> <a
-							class="dropdown-item" href="/">Cerrar sesi√≥n</a>
+							data-target="#informacion">InformaciÛn</a> <a
+							class="dropdown-item" href="/">Cerrar sesiÛn</a>
 					</div></li>
 			</ul>
 		</div>
@@ -97,21 +97,21 @@
 
 						<div class="card">
 							<div class="card-body">
-								<h4>Gestor del centro m√©dico</h4>
+								<h4>Gestor del centro mÈdico</h4>
 								<p>
-									Se encuentra en la p√°gina de gesti√≥n del centro. Para obtener
-									informaci√≥n sobre el uso de las diferentes funcionalidades de
-									las que dispone presione el siguiente bot√≥n
+									Se encuentra en la p·gina de gestiÛn del centro. Para obtener
+									informaciÛn sobre el uso de las diferentes funcionalidades de
+									las que dispone presione el siguiente botÛn
 									<button type="button" class="btn btn-primary"
 										data-toggle="modal" data-target="#informacion">
-										Informaci√≥n</button>
+										InformaciÛn</button>
 								<div class="modal fade" id="informacion" tabindex="-1"
 									role="dialog" aria-labelledby="exampleModalLongTitle"
 									aria-hidden="true">
 									<div class="modal-dialog" role="document">
 										<div class="modal-content">
 											<div class="modal-header">
-												<h5 class="modal-title" id="exampleModalLongTitle">Informaci√≥n</h5>
+												<h5 class="modal-title" id="exampleModalLongTitle">InformaciÛn</h5>
 												<button type="button" class="close" data-dismiss="modal"
 													aria-label="Close">
 													<span aria-hidden="true">&times;</span>
@@ -121,20 +121,20 @@
 												En esta vista usted cuenta con tres tablas:
 												<h5></h5>
 												<h5>Usuarios externos</h5>
-												En esta tabla usted podr√° asignar su centro m√©dico,
-												convertir en m√©dico y/o en gestor de su centro m√©dico al
-												usuario seleccionado a trav√©s de los diferentes botones que
+												En esta tabla usted podr· asignar su centro mÈdico,
+												convertir en mÈdico y/o en gestor de su centro mÈdico al
+												usuario seleccionado a travÈs de los diferentes botones que
 												puede observar en la tabla mencionada.
 												<h5></h5>
 												<h5>Pacientes del centro</h5>
-												En esta tabla usted podr√° convertir en m√©dico y/o en gestor
-												de su centro m√©dico al usuario seleccionado, tambi√©n podr√°
-												ver su calendario a trav√©s de los diferentes botones que
+												En esta tabla usted podr· convertir en mÈdico y/o en gestor
+												de su centro mÈdico al usuario seleccionado, tambiÈn podr·
+												ver su calendario a travÈs de los diferentes botones que
 												puede observar en la tabla mencionada.
 												<h5></h5>
-												<h5>M√©dicos del centro</h5>
-												En esta tabla usted podr√° gestionar las citas(modificar o
-												eliminar) del m√©dico de su centro m√©dico, a trav√©s de los
+												<h5>MÈdicos del centro</h5>
+												En esta tabla usted podr· gestionar las citas(modificar o
+												eliminar) del mÈdico de su centro mÈdico, a travÈs de los
 												diferentes botones que puede observar en la tabla
 												mencionada.
 											</div>
@@ -171,7 +171,7 @@
 				<li class="nav-item"><a class="nav-link" data-toggle="tab"
 					href="#menu2">Pacientes Del Centro</a></li>
 				<li class="nav-item"><a class="nav-link" data-toggle="tab"
-					href="#menu3">M√©dicos del Centro</a></li>
+					href="#menu3">MÈdicos del Centro</a></li>
 			</ul>
 
 			<div class="tab-content">
@@ -179,9 +179,9 @@
 					<div>
 						<br></br>
 					</div>
-					<h3>Gesti√≥n de Usuarios Externos</h3>
+					<h3>GestiÛn de Usuarios Externos</h3>
 					<strong class="d-inline-block mb-2 text-primary center">Pacientes
-						externos al Centro M√©dico</strong>
+						externos al Centro MÈdico</strong>
 					<div class="row d-flex justify-content-center">
 						<div class="container">
 							<table id="TablaUsuarios" class="table table-bordered">
@@ -189,7 +189,7 @@
 									<tr class="table-primary">
 										<td align="center" scope="col"><b>DNI</b></td>
 										<td align="center" scope="col"><b>Nombre</b></td>
-										<td align="center" scope="col"><b>Centro M√©dico</b></td>
+										<td align="center" scope="col"><b>Centro MÈdico</b></td>
 									</tr>
 								</thead>
 							</table>
@@ -200,9 +200,9 @@
 					<div>
 						<br></br>
 					</div>
-					<h3>Gesti√≥n de Pacientes Del Centro M√©dico</h3>
+					<h3>GestiÛn de Pacientes Del Centro MÈdico</h3>
 					<strong class="d-inline-block mb-2 text-success">Pacientes
-						del Centro M√©dico</strong>
+						del Centro MÈdico</strong>
 					<div class="row d-flex justify-content-center">
 						<div class="container">
 							<table id="TablaUsuariosCentro" class="table table-bordered">
@@ -210,7 +210,7 @@
 									<tr class="table-primary">
 										<td align="center" scope="col"><b>DNI</b></td>
 										<td align="center" scope="col"><b>Nombre</b></td>
-										<td align="center" scope="col"><b>Centro M√©dico</b></td>
+										<td align="center" scope="col"><b>Centro MÈdico</b></td>
 									</tr>
 								</thead>
 							</table>
@@ -221,9 +221,9 @@
 					<div>
 						<br></br>
 					</div>
-					<h3>Gesti√≥n de M√©dicos Del Centro</h3>
+					<h3>GestiÛn de MÈdicos Del Centro</h3>
 					<div class="row mb-2">
-						<strong class="d-inline-block mb-2 text-primary center">M√©dicos
+						<strong class="d-inline-block mb-2 text-primary center">MÈdicos
 							del Centro</strong>
 						<div class="row d-flex justify-content-center">
 							<div class="container">
@@ -232,9 +232,9 @@
 										<tr class="table-primary">
 											<td align="center" scope="col"><b>DNI</b></td>
 											<td align="center" scope="col"><b>Nombre</b></td>
-											<td align="center" scope="col"><b>Centro M√©dico</b>
+											<td align="center" scope="col"><b>Centro MÈdico</b>
 											<td align="center" scope="col"><b>Especialidad</b>
-											<td align="center" scope="col"><b>Tel√©fono</b></td>
+											<td align="center" scope="col"><b>TelÈfono</b></td>
 										</tr>
 									</thead>
 								</table>
@@ -377,7 +377,7 @@
 											+ '<button id=\'botonConvertirTrabajador'
 											+ i
 											+ '\' class=\'btn btn-primary \' onClick="funcionConvertirMedico(this)">'
-											+ 'Convertir en M√©dico'
+											+ 'Convertir en MÈdico'
 											+ '</button> '
 											+ '</td>'
 											+ '<td align="center" style="dislay: none;">'
@@ -406,7 +406,7 @@
 											+ '<button id=\'botonConvertirTrabajadorCM'
 											+ i
 											+ '\' class=\'btn btn-primary \' onClick="funcionConvertirMedico(this)">'
-											+ 'Convertir en M√©dico'
+											+ 'Convertir en MÈdico'
 											+ '</button> '
 											+ '</td>'
 											+ '<td align="center" style="dislay: none;">'

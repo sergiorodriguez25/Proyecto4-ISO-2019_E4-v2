@@ -77,8 +77,8 @@
 					<div class="dropdown-menu" aria-labelledby="dropdown01">
 						<a class="dropdown-item" href="#">Mi Perfil</a> <a
 							class="dropdown-item" data-toggle="modal"
-							data-target="#informacion">Informaci√≥n</a> <a
-							class="dropdown-item" href="/">Cerrar sesi√≥n</a>
+							data-target="#informacion">InformaciÛn</a> <a
+							class="dropdown-item" href="/">Cerrar sesiÛn</a>
 					</div></li>
 			</ul>
 		</div>
@@ -95,16 +95,16 @@
 						<div class="card">
 							<div class="card-body">
 								<h4>Citas de pacientes</h4>
-								<p>Bienvenido/a a la p√°gina de "Citas de pacientes" en la
+								<p>Bienvenido/a a la p·gina de "Citas de pacientes" en la
 									que aparecen todas las citas que tiene programadas ordenadas
-									por d√≠as.</p>
+									por dÌas.</p>
 								<div class="modal fade" id="informacion" tabindex="-1"
 									role="dialog" aria-labelledby="exampleModalLongTitle"
 									aria-hidden="true">
 									<div class="modal-dialog" role="document">
 										<div class="modal-content">
 											<div class="modal-header">
-												<h5 class="modal-title" id="exampleModalLongTitle">Informaci√≥n</h5>
+												<h5 class="modal-title" id="exampleModalLongTitle">InformaciÛn</h5>
 												<button type="button" class="close" data-dismiss="modal"
 													aria-label="Close">
 													<span aria-hidden="true">&times;</span>
@@ -114,8 +114,8 @@
 												En esta vista usted puede:
 												<h5></h5>
 												<h5>Mis citas</h5>
-												Mediante este bot√≥n usted cambiar√° a su vista paciente,
-												d√≥nde podr√° solicitar, modificar y eliminar sus citas
+												Mediante este botÛn usted cambiar· a su vista paciente,
+												dÛnde podr· solicitar, modificar y eliminar sus citas
 												personales.
 											</div>
 											<div class="modal-footer">
@@ -126,12 +126,12 @@
 									</div>
 								</div>
 								<p id="cambiarPaciente">
-									Si desea cambiar a vista de Paciente pulse el bot√≥n <a
+									Si desea cambiar a vista de Paciente pulse el botÛn <a
 										href="/citas" class="btn btn-primary btn-large" type="submit">Mis
 										citas</a>
 								</p>
 								<p id="volverGestor">
-									Para volver a la p√°gina principal de Gestor pulse el bot√≥n <a
+									Para volver a la p·gina principal de Gestor pulse el botÛn <a
 										href="/gestor" class="btn btn-primary btn-large" type="submit">Gestor</a>
 								</p>
 							</div>
@@ -155,7 +155,7 @@
 			<div class="row d-flex justify-content-center">
 				<div class="container">
 					<div align='center'>
-						<h2>Pr√≥ximas Citas</h2>
+						<h2>PrÛximas Citas</h2>
 					</div>
 					<table id="Table" class="table table-bordered">
 						<thead>
@@ -197,8 +197,8 @@
 						function($) {
 							enviardni();
 							/*
-							 * Control para que no acceda a travis de la url a alguna p√°gina que no sea el home
-							 * Hay que ponerlo en todos los jsp que se hagan pr√≥ximamente
+							 * Control para que no acceda a travis de la url a alguna p·gina que no sea el home
+							 * Hay que ponerlo en todos los jsp que se hagan prÛximamente
 							 */
 							var referrer = document.referrer;
 							if (referrer != 'http://localhost:8080/'

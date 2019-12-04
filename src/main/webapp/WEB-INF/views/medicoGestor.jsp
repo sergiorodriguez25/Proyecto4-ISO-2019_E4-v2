@@ -77,8 +77,8 @@
 					<div class="dropdown-menu" aria-labelledby="dropdown01">
 						<a class="dropdown-item" href="#">Mi Perfil</a> <a
 							class="dropdown-item" data-toggle="modal"
-							data-target="#informacion">InformaciÃ³n</a> <a
-							class="dropdown-item" href="/">Cerrar sesiÃ³n</a>
+							data-target="#informacion">Información</a> <a
+							class="dropdown-item" href="/">Cerrar sesión</a>
 					</div></li>
 			</ul>
 		</div>
@@ -95,16 +95,16 @@
 						<div class="card">
 							<div class="card-body">
 								<h4>Citas de pacientes</h4>
-								<p>Bienvenido/a a la pÃ¡gina de "Citas de pacientes" en la
-									que aparecen todas las citas que el mÃ©dico seleccionado tiene
-									programadas ordenadas por dÃ­as.</p>
+								<p>Bienvenido/a a la página de "Citas de pacientes" en la
+									que aparecen todas las citas que el médico seleccionado tiene
+									programadas ordenadas por días.</p>
 								<div class="modal fade" id="informacion" tabindex="-1"
 									role="dialog" aria-labelledby="exampleModalLongTitle"
 									aria-hidden="true">
 									<div class="modal-dialog" role="document">
 										<div class="modal-content">
 											<div class="modal-header">
-												<h5 class="modal-title" id="exampleModalLongTitle">InformaciÃ³n</h5>
+												<h5 class="modal-title" id="exampleModalLongTitle">Información</h5>
 												<button type="button" class="close" data-dismiss="modal"
 													aria-label="Close">
 													<span aria-hidden="true">&times;</span>
@@ -114,16 +114,16 @@
 												En esta vista usted puede:
 												<h5></h5>
 												<h5>Volver a gestor</h5>
-												A travÃ©s de este botÃ³n usted puede volver a su vista de
+												A través de este botón usted puede volver a su vista de
 												gestor.
 												<h5></h5>
 												<h5>Modificar cita</h5>
-												A travÃ©s de este botÃ³n usted podrÃ¡ modificar una de las
-												prÃ³ximas citas del mÃ©dico.
+												A través de este botón usted podrá modificar una de las
+												próximas citas del médico.
 												<h5></h5>
 												<h5>Eliminar cita</h5>
-												A travÃ©s de este botÃ³n usted podrÃ¡ eliminar una de las
-												prÃ³ximas citas del mÃ©dico.
+												A través de este botón usted podrá eliminar una de las
+												próximas citas del médico.
 											</div>
 											<div class="modal-footer">
 												<button type="button" class="btn btn-secondary"
@@ -133,7 +133,7 @@
 									</div>
 								</div>
 								<p>
-									Para volver a la pÃ¡gina principal de Gestor pulse el botÃ³n <a
+									Para volver a la página principal de Gestor pulse el botón <a
 										href="gestor" class="btn btn-primary btn-large" type="submit">Gestor</a>
 								</p>
 							</div>
@@ -284,7 +284,7 @@
 
 			swal({
 				  title: "Â¿Quiere eliminar esta cita?",
-				  text: "Si pulsa el botÃ³n OK dejarÃ¡ de tener asignada la cita",
+				  text: "Si pulsa el botón OK dejará de tener asignada la cita",
 				  icon: "warning",
 				  buttons: true,
 				  dangerMode: true,

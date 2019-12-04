@@ -11,7 +11,7 @@
 <link rel="canonical"
 	href="https://getbootstrap.com/docs/3.4/examples/signin/">
 
-<title>Horario M√©dico</title>
+<title>Horario MÈdico</title>
 
 <!-- Bootstrap core CSS -->
 <link rel="stylesheet"
@@ -88,8 +88,8 @@
 					<div class="dropdown-menu" aria-labelledby="dropdown01">
 						<a class="dropdown-item" href="#">Mi Perfil</a> <a
 							class="dropdown-item" data-toggle="modal"
-							data-target="#informacion">Informaci√≥n</a> <a
-							class="dropdown-item" href="/">Cerrar sesi√≥n</a>
+							data-target="#informacion">InformaciÛn</a> <a
+							class="dropdown-item" href="/">Cerrar sesiÛn</a>
 					</div></li>
 			</ul>
 		</div>
@@ -109,9 +109,9 @@
 						<div class="col-md-8">
 							<div class="card">
 								<div class="card-body">
-									<h4>Formulario de Asignaci√≥n de Horario M√©dico</h4>
-									<p>Para asignar el horario del m√©dico seleccione la
-										especialidad del m√©dico, los d√≠as que va a trabajar y la hora
+									<h4>Formulario de AsignaciÛn de Horario MÈdico</h4>
+									<p>Para asignar el horario del mÈdico seleccione la
+										especialidad del mÈdico, los dÌas que va a trabajar y la hora
 										inicio y hora fin de su jornada laboral.</p>
 								</div>
 								<div class="modal fade" id="informacion" tabindex="-1"
@@ -120,7 +120,7 @@
 									<div class="modal-dialog" role="document">
 										<div class="modal-content">
 											<div class="modal-header">
-												<h5 class="modal-title" id="exampleModalLongTitle">Informaci√≥n</h5>
+												<h5 class="modal-title" id="exampleModalLongTitle">InformaciÛn</h5>
 												<button type="button" class="close" data-dismiss="modal"
 													aria-label="Close">
 													<span aria-hidden="true">&times;</span>
@@ -129,9 +129,9 @@
 											<div class="modal-body">
 												En esta vista usted puede:
 												<h5></h5>
-												<h5>Asignar horario al m√©dico</h5>
-												Para asignar el horario del m√©dico usted debe seleccionar la
-												especialidad del m√©dico, los d√≠as que va a trabajar y la
+												<h5>Asignar horario al mÈdico</h5>
+												Para asignar el horario del mÈdico usted debe seleccionar la
+												especialidad del mÈdico, los dÌas que va a trabajar y la
 												hora inicio y hora fin de su jornada laboral.
 											</div>
 											<div class="modal-footer">
@@ -160,7 +160,7 @@
 							</select>
 						</div>
 						<label id="labelEspecialidadMal"></label> <br></br> <label
-							for="diasSemana">Seleccione los d√≠as que va a trabajar</label>
+							for="diasSemana">Seleccione los dÌas que va a trabajar</label>
 						<div class="container center">
 							<div class="col-md-6 mb-3 text-left">
 								<div class="form-check">
@@ -176,7 +176,7 @@
 								<div class="form-check">
 									<input class="form-check-input" type="checkbox" value=""
 										id="miercoles"> <label class="form-check-label"
-										for="miercolesLabel"> Mi√©rcoles </label>
+										for="miercolesLabel"> MiÈrcoles </label>
 								</div>
 								<div class="form-check">
 									<input class="form-check-input" type="checkbox" value=""
@@ -191,7 +191,7 @@
 								<div class="form-check">
 									<input class="form-check-input" type="checkbox" value=""
 										id="sabado"> <label class="form-check-label"
-										for="sabadoLabel"> S√°bado </label>
+										for="sabadoLabel"> S·bado </label>
 								</div>
 								<div class="form-check">
 									<input class="form-check-input" type="checkbox" value=""
@@ -215,7 +215,7 @@
 							<hr class="mb-4">
 							<a id="confirmarMedico" class="btn btn-primary btn-large"
 								type="submit">Confirmar</a> <a href="/gestor"
-								class="btn btn-primary btn-large" type="submit">Volver atr√°s</a>
+								class="btn btn-primary btn-large" type="submit">Volver atr·s</a>
 							</form>
 						</div>
 					</div>
@@ -363,7 +363,7 @@
 			if (hora == '') {
 				document.getElementById("labelHoraMal").style.display = 'inline';
 				$('#labelHoraMal').html(
-						"La hora no es v√°lida, debe estar en formato 00:00");
+						"La hora no es v·lida, debe estar en formato 00:00");
 				$('#labelHoraMal').css("color", "red");
 				return 1;
 			}
@@ -372,7 +372,7 @@
 				console.log("hora mala");
 				document.getElementById("labelHoraMal").style.display = 'inline';
 				$('#labelHoraMal').html(
-						"La hora no es v√°lida, debe estar en formato 00:00");
+						"La hora no es v·lida, debe estar en formato 00:00");
 				$('#labelHoraMal').css("color", "red");
 				return 1;
 			}
@@ -386,7 +386,7 @@
 						document.getElementById("labelHoraMal").style.display = 'inline';
 						$('#labelHoraMal')
 								.html(
-										"La hora no es v√°lida, debe estar en formato 00:00");
+										"La hora no es v·lida, debe estar en formato 00:00");
 						$('#labelHoraMal').css("color", "red");
 						return 1;
 					}
@@ -401,7 +401,7 @@
 						document.getElementById("labelHoraMal").style.display = 'inline';
 						$('#labelHoraMal')
 								.html(
-										"La hora no es v√°lida, debe estar en formato 00:00");
+										"La hora no es v·lida, debe estar en formato 00:00");
 						$('#labelHoraMal').css("color", "red");
 						return 1;
 					}
@@ -412,7 +412,7 @@
 						document.getElementById("labelHoraMal").style.display = 'inline';
 						$('#labelHoraMal')
 								.html(
-										"La hora no es v√°lida, debe estar en formato 00:00");
+										"La hora no es v·lida, debe estar en formato 00:00");
 						$('#labelHoraMal').css("color", "red");
 						return 1;
 					}
@@ -425,7 +425,7 @@
 						document.getElementById("labelHoraMal").style.display = 'inline';
 						$('#labelHoraMal')
 								.html(
-										"La hora no es v√°lida, debe estar en formato 00:00");
+										"La hora no es v·lida, debe estar en formato 00:00");
 						$('#labelHoraMal').css("color", "red");
 						return 1;
 					}
@@ -440,7 +440,7 @@
 						document.getElementById("labelHoraMal").style.display = 'inline';
 						$('#labelHoraMal')
 								.html(
-										"La hora no es v√°lida, debe estar en formato 00:00");
+										"La hora no es v·lida, debe estar en formato 00:00");
 						$('#labelHoraMal').css("color", "red");
 						return 1;
 					}
@@ -478,7 +478,7 @@
 													}
 													if ($('#miercoles').is(
 															':checked')) {
-														diasSelecc[i] = 'Mi√©rcoles';
+														diasSelecc[i] = 'MiÈrcoles';
 														i++;
 													}
 													if ($('#jueves').is(
@@ -493,7 +493,7 @@
 													}
 													if ($('#sabado').is(
 															':checked')) {
-														diasSelecc[i] = 'S√°bado';
+														diasSelecc[i] = 'S·bado';
 														i++;
 													}
 													if ($('#domingo').is(
@@ -556,9 +556,9 @@
 		}
 
 		function MedicoInsertadoOK(respuesta) {
-			console.log("M√©dico insertado OK");
+			console.log("MÈdico insertado OK");
 			swal({
-				title : "M√©dico Insertado",
+				title : "MÈdico Insertado",
 				icon : "success",
 			}).then(function() {
 				window.location.href = "/gestor";
@@ -585,7 +585,7 @@
 			document.getElementById("fecha").style.display = 'none';
 			if (texto == '') {
 				document.getElementById("fecha").style.display = 'inline';
-				$('#fecha').html("Tiene que escoger un d√≠a para su cita.");
+				$('#fecha').html("Tiene que escoger un dÌa para su cita.");
 				$('#fecha').css("color", "red");
 				return 1;
 			}
