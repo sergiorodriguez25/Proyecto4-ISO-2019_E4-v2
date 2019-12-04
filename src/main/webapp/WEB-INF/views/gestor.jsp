@@ -306,9 +306,9 @@
 									&& referrer != 'sgc-e4.herokuapp.com/formularioGestor'
 									&& referrer != 'http://localhost:8080/calendarioGlobal'
 									&& referrer != 'https://sgc-e4.herokuapp.com/calendarioGlobal'
-									&& referrer != 'sgc-e4.herokuapp.com/formularioModificarHorarios'
-									&& referrer != 'http://localhost:8080/formularioModificarHorarios'
-									&& referrer != 'https://sgc-e4.herokuapp.com/formularioModificarHorarios'
+									&& referrer != 'sgc-e4.herokuapp.com/formularioModificarHorario'
+									&& referrer != 'http://localhost:8080/formularioModificarHorario'
+									&& referrer != 'https://sgc-e4.herokuapp.com/formularioModificarHorario'
 									) {
 								var forma = document.forms[0];
 								forma.action = "/error";
@@ -494,7 +494,7 @@
 		
 		function funcionModificarHorarios(boton) {
 			
-			location.href = "/formularioModificarHorarios";
+			location.href = "/formularioModificarHorario";
 		}
 		
 
