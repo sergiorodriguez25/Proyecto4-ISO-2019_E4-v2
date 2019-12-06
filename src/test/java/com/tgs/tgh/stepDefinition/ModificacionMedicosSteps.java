@@ -12,11 +12,12 @@ public class ModificacionMedicosSteps {
 
     @When("^Se modifican los medicos$")
     public void se_modifica_los_medicos() throws Throwable {
-	//añadir aqui codigo creado para la modificacion
+	PacienteDAO.modificarCentro(Recursos.getPaciente().getDNI(), "Nuevo Centro");
     }
 
     @Then("^Se cambian los medicos en la base de datos$")
     public void se_cambian_los_medicos_en_la_base_de_datos() throws Throwable {
-	//añadir aqui codigo creado para la modificacion
+	Paciente paciente = PacienteDAO.esPaciente(Recursos.getUsuario());
+	assertEquals(paciente.getCentroMedico(), "Nuevo Centro");
     }
 }

@@ -207,6 +207,19 @@ public class HomeController {
 
 		return "";
 	}
+	
+	@CrossOrigin(origins = "*", allowCredentials = "true")
+	@RequestMapping(value = "/grupomedico", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+	@ResponseBody
+	public String grupoMedico(@RequestBody Map<String, String> jso) throws Throwable {
+		System.out.println(jso);
+		String dni = jso.get("DNI");
+		if (jso.get("tipo").equals("eliminar")) {
+			Manager.get().eliminarGrupoMedico(dni);
+		}
+
+		return "";
+	}
 
 	@RequestMapping(value = "/formularioModificar", method = RequestMethod.GET)
 	public String formModif() {

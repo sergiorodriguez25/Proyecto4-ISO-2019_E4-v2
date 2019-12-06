@@ -392,7 +392,7 @@
 			};
 			console.log(data);
 			swal({
-				  title: "Â¿Quiere eliminar esta cita?",
+				  title: "¿Quiere eliminar esta cita?",
 				  text: "Si pulsa el botón OK dejará de tener asignada la cita",
 				  icon: "warning",
 				  buttons: true,
