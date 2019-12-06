@@ -300,6 +300,13 @@ public class DBBroker<T> {
 		MongoCollection<BsonDocument> collection = this.db.getCollection("HorariosMedicos", BsonDocument.class);
 		collection.deleteOne(criterion);
 	}
+	
+	public void eliminarHorarioMedico(String dniMedico) {
+		BsonDocument criterion = new BsonDocument();
+		criterion.append("DNI", new BsonString(Encriptador.encriptar(dniMedico)));
+		MongoCollection<BsonDocument> collection= this.db.getCollection("HorariosMedicos", BsonDocument.class);
+		collection.deleteMany(criterion);
+	}
 
 	public void anadirHoraMedico(String dia, String hora, String dniMedico) {
 		BsonDocument criterion = new BsonDocument();

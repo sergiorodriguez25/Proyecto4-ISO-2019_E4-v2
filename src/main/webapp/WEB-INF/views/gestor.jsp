@@ -308,8 +308,7 @@
 									&& referrer != 'https://sgc-e4.herokuapp.com/calendarioGlobal'
 									&& referrer != 'sgc-e4.herokuapp.com/formularioModificarHorario'
 									&& referrer != 'http://localhost:8080/formularioModificarHorario'
-									&& referrer != 'https://sgc-e4.herokuapp.com/formularioModificarHorario'
-									) {
+									&& referrer != 'https://sgc-e4.herokuapp.com/formularioModificarHorario') {
 								var forma = document.forms[0];
 								forma.action = "/error";
 								forma.submit();
@@ -425,13 +424,13 @@
 											+ i
 											+ '\' class=\'btn btn-primary \' onClick="funcionConvertirGestor(this)">'
 											+ 'Convertir en Gestor'
-											+ '</button> ' + '</td>'
+											+ '</button> '
+											+ '</td>'
 											+ '<td align="center" style="dislay: none;">'
 											+ '<button id=\'botonModificarCentro'
 											+ i
 											+ '\' class=\'btn btn-primary \' onClick="funcionModificarCentro(this)">'
-											+ 'Cambiar Centro'
-											+ '</button> '
+											+ 'Cambiar Centro' + '</button> '
 											+ '</td></tr>');
 				}
 			}
@@ -463,16 +462,16 @@
 											+ '<button id=\'botonGestionarCitas'
 											+ j
 											+ '\' class=\'btn btn-primary \' onClick="funcionGestionarCitas(this)">'
-											+ 'Gestionar Citas' + '</button> '
+											+ 'Gestionar Citas'
+											+ '</button> '
 											+ '</td>'
 											+ '<td align="center" style="dislay: none;">'
 											+ '<button id=\'botonModificarHorarios'
 											+ j
 											+ '\' class=\'btn btn-primary \' onClick="funcionModificarHorarios(this)">'
-											+ 'Modificar Horario' + '</button> '
-											+ '</td></tr>');
-								
-											
+											+ 'Modificar Horario'
+											+ '</button> ' + '</td></tr>');
+
 				}
 			}
 		}
@@ -491,12 +490,19 @@
 			sessionStorage.MedicoEdit = JSON.stringify(jsoMedico);
 			location.href = "/medicoGestor";
 		}
-		
+
 		function funcionModificarHorarios(boton) {
-			
+			var dni = boton.parentNode.parentNode.children[0].innerHTML;
+			var especialidad = boton.parentNode.parentNode.children[3].innerHTML;
+			var jsoMedico = {
+				"Medico" : [ {
+					"DNI" : dni,
+					"especialidad" : especialidad,
+				} ]
+			};
+			sessionStorage.MedicoHorario = JSON.stringify(jsoMedico);
 			location.href = "/formularioModificarHorario";
 		}
-		
 
 		function funcionCalendario(boton) {
 			var dni = boton.parentNode.parentNode.children[0].innerHTML;
