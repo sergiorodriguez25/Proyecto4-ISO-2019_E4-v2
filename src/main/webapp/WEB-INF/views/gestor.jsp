@@ -425,7 +425,7 @@
 											+ '<td align="center" style="dislay: none;">'
 											+ '<button id=\'botonModificarCentro'
 											+ i
-											+ '\' class=\'btn btn-primary \' onClick="funcionModificarCentro(this)">'
+											+ '\' class=\'btn btn-primary \' onClick="funcionCambiarMedicos(this)">'
 											+ 'Cambiar Centro'
 											+ '</button> '
 											+ '</td></tr>');
@@ -572,6 +572,42 @@
 			console.log(e);
 		}
 
+		function funcionCambiarMedicos(boton) {
+			var dni = boton.parentNode.parentNode.children[0].innerHTML;
+			sessionStorage.dniModificarCentro = boton.parentNode.parentNode.children[0].textContent;
+			console.log(dni);
+			var data = {
+					DNI : dni,
+					tipo : "eliminar"
+			};
+			console.log(data);
+			enviarEliminarGrupoMedico(data);
+			window.location.href = "/formularioPaciente";
+		}
+		
+		function enviarEliminarGrupoMedico(data) {
+			var url = "/grupomedico";
+			var type = "POST";
+			var success;
+			var error;
+			var xhrFields;
+			var headers = {
+				'Content-Type' : 'application/json'
+			};
+			
+			data = JSON.stringify(data);
+			$.ajax({
+				type: type,
+				url: url,
+				data: data,
+		        headers : headers,
+		        xhrFields: {
+		            withCredentials: true
+		        }
+
+			});
+		}
+		
 		function funcionModificarCentro(boton) {
 			sessionStorage.dniModificarCentro = boton.parentNode.parentNode.children[0].textContent;
 			window.location.href = "/formularioPaciente";

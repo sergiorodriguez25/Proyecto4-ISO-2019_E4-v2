@@ -196,6 +196,11 @@ public class Manager {
 		return grupo;
 
 	}
+	
+	public void eliminarGrupoMedico(String dniPaciente) throws Exception {
+		ArrayList<String> grupo = GrupoMedicoDAO.getGrupoMedico(dniPaciente);
+		GrupoMedicoDAO.deleteGrupoMedico(dniPaciente, grupo);
+	}
 
 	public JSONObject getHorarioCitas(String dniMedico) {
 		HorarioMedico hm = HorarioMedicoDAO.getHorarioMedico(dniMedico);
