@@ -80,8 +80,8 @@
 					<div class="dropdown-menu" aria-labelledby="dropdown01">
 						<a class="dropdown-item" href="#">Mi Perfil</a> <a
 							class="dropdown-item" data-toggle="modal"
-							data-target="#informacion">Informaciï¿½n</a> <a
-							class="dropdown-item" href="/">Cerrar sesiï¿½n</a>
+							data-target="#informacion">Información</a> <a
+							class="dropdown-item" href="/">Cerrar sesión</a>
 					</div></li>
 			</ul>
 		</div>
@@ -97,21 +97,21 @@
 
 						<div class="card">
 							<div class="card-body">
-								<h4>Gestor del centro mï¿½dico</h4>
+								<h4>Gestor del centro médico</h4>
 								<p>
-									Se encuentra en la pï¿½gina de gestiï¿½n del centro. Para obtener
-									informaciï¿½n sobre el uso de las diferentes funcionalidades de
-									las que dispone presione el siguiente botï¿½n
+									Se encuentra en la página de gestión del centro. Para obtener
+									información sobre el uso de las diferentes funcionalidades de
+									las que dispone presione el siguiente botón
 									<button type="button" class="btn btn-primary"
 										data-toggle="modal" data-target="#informacion">
-										Informaciï¿½n</button>
+										Información</button>
 								<div class="modal fade" id="informacion" tabindex="-1"
 									role="dialog" aria-labelledby="exampleModalLongTitle"
 									aria-hidden="true">
 									<div class="modal-dialog" role="document">
 										<div class="modal-content">
 											<div class="modal-header">
-												<h5 class="modal-title" id="exampleModalLongTitle">Informaciï¿½n</h5>
+												<h5 class="modal-title" id="exampleModalLongTitle">Información</h5>
 												<button type="button" class="close" data-dismiss="modal"
 													aria-label="Close">
 													<span aria-hidden="true">&times;</span>
@@ -121,20 +121,20 @@
 												En esta vista usted cuenta con tres tablas:
 												<h5></h5>
 												<h5>Usuarios externos</h5>
-												En esta tabla usted podrï¿½ asignar su centro mï¿½dico,
-												convertir en mï¿½dico y/o en gestor de su centro mï¿½dico al
-												usuario seleccionado a travï¿½s de los diferentes botones que
+												En esta tabla usted podrá asignar su centro médico,
+												convertir en médico y/o en gestor de su centro médico al
+												usuario seleccionado a través de los diferentes botones que
 												puede observar en la tabla mencionada.
 												<h5></h5>
 												<h5>Pacientes del centro</h5>
-												En esta tabla usted podrï¿½ convertir en mï¿½dico y/o en gestor
-												de su centro mï¿½dico al usuario seleccionado, tambiï¿½n podrï¿½
-												ver su calendario a travï¿½s de los diferentes botones que
+												En esta tabla usted podrá convertir en médico y/o en gestor
+												de su centro médico al usuario seleccionado, también podrá
+												ver su calendario a través de los diferentes botones que
 												puede observar en la tabla mencionada.
 												<h5></h5>
-												<h5>Mï¿½dicos del centro</h5>
-												En esta tabla usted podrï¿½ gestionar las citas(modificar o
-												eliminar) del mï¿½dico de su centro mï¿½dico, a travï¿½s de los
+												<h5>Médicos del centro</h5>
+												En esta tabla usted podrá gestionar las citas(modificar o
+												eliminar) del médico de su centro médico, a través de los
 												diferentes botones que puede observar en la tabla
 												mencionada.
 											</div>
@@ -171,7 +171,7 @@
 				<li class="nav-item"><a class="nav-link" data-toggle="tab"
 					href="#menu2">Pacientes Del Centro</a></li>
 				<li class="nav-item"><a class="nav-link" data-toggle="tab"
-					href="#menu3">Mï¿½dicos del Centro</a></li>
+					href="#menu3">Médicos del Centro</a></li>
 			</ul>
 
 			<div class="tab-content">
@@ -179,9 +179,9 @@
 					<div>
 						<br></br>
 					</div>
-					<h3>Gestiï¿½n de Usuarios Externos</h3>
+					<h3>Gestión de Usuarios Externos</h3>
 					<strong class="d-inline-block mb-2 text-primary center">Pacientes
-						externos al Centro Mï¿½dico</strong>
+						externos al Centro Médico</strong>
 					<div class="row d-flex justify-content-center">
 						<div class="container">
 							<table id="TablaUsuarios" class="table table-bordered">
@@ -189,7 +189,7 @@
 									<tr class="table-primary">
 										<td align="center" scope="col"><b>DNI</b></td>
 										<td align="center" scope="col"><b>Nombre</b></td>
-										<td align="center" scope="col"><b>Centro Mï¿½dico</b></td>
+										<td align="center" scope="col"><b>Centro Médico</b></td>
 									</tr>
 								</thead>
 							</table>
@@ -200,9 +200,9 @@
 					<div>
 						<br></br>
 					</div>
-					<h3>Gestiï¿½n de Pacientes Del Centro Mï¿½dico</h3>
+					<h3>Gestión de Pacientes Del Centro Médico</h3>
 					<strong class="d-inline-block mb-2 text-success">Pacientes
-						del Centro Mï¿½dico</strong>
+						del Centro Médico</strong>
 					<div class="row d-flex justify-content-center">
 						<div class="container">
 							<table id="TablaUsuariosCentro" class="table table-bordered">
@@ -210,7 +210,7 @@
 									<tr class="table-primary">
 										<td align="center" scope="col"><b>DNI</b></td>
 										<td align="center" scope="col"><b>Nombre</b></td>
-										<td align="center" scope="col"><b>Centro Mï¿½dico</b></td>
+										<td align="center" scope="col"><b>Centro Médico</b></td>
 									</tr>
 								</thead>
 							</table>
@@ -221,9 +221,9 @@
 					<div>
 						<br></br>
 					</div>
-					<h3>Gestiï¿½n de Mï¿½dicos Del Centro</h3>
+					<h3>Gestión de Médicos Del Centro</h3>
 					<div class="row mb-2">
-						<strong class="d-inline-block mb-2 text-primary center">Mï¿½dicos
+						<strong class="d-inline-block mb-2 text-primary center">Médicos
 							del Centro</strong>
 						<div class="row d-flex justify-content-center">
 							<div class="container">
@@ -232,9 +232,9 @@
 										<tr class="table-primary">
 											<td align="center" scope="col"><b>DNI</b></td>
 											<td align="center" scope="col"><b>Nombre</b></td>
-											<td align="center" scope="col"><b>Centro Mï¿½dico</b>
+											<td align="center" scope="col"><b>Centro Médico</b>
 											<td align="center" scope="col"><b>Especialidad</b>
-											<td align="center" scope="col"><b>Telï¿½fono</b></td>
+											<td align="center" scope="col"><b>Teléfono</b></td>
 										</tr>
 									</thead>
 								</table>
@@ -308,7 +308,8 @@
 									&& referrer != 'https://sgc-e4.herokuapp.com/calendarioGlobal'
 									&& referrer != 'sgc-e4.herokuapp.com/formularioModificarHorario'
 									&& referrer != 'http://localhost:8080/formularioModificarHorario'
-									&& referrer != 'https://sgc-e4.herokuapp.com/formularioModificarHorario') {
+									&& referrer != 'https://sgc-e4.herokuapp.com/formularioModificarHorario'
+									) {
 								var forma = document.forms[0];
 								forma.action = "/error";
 								forma.submit();
@@ -380,7 +381,7 @@
 											+ '<button id=\'botonConvertirTrabajador'
 											+ i
 											+ '\' class=\'btn btn-primary \' onClick="funcionConvertirMedico(this)">'
-											+ 'Convertir en Mï¿½dico'
+											+ 'Convertir en Médico'
 											+ '</button> '
 											+ '</td>'
 											+ '<td align="center" style="dislay: none;">'
@@ -409,7 +410,7 @@
 											+ '<button id=\'botonConvertirTrabajadorCM'
 											+ i
 											+ '\' class=\'btn btn-primary \' onClick="funcionConvertirMedico(this)">'
-											+ 'Convertir en Mï¿½dico'
+											+ 'Convertir en Médico'
 											+ '</button> '
 											+ '</td>'
 											+ '<td align="center" style="dislay: none;">'
@@ -424,8 +425,7 @@
 											+ i
 											+ '\' class=\'btn btn-primary \' onClick="funcionConvertirGestor(this)">'
 											+ 'Convertir en Gestor'
-											+ '</button> '
-											+ '</td>'
+											+ '</button> ' + '</td>'
 											+ '<td align="center" style="dislay: none;">'
 											+ '<button id=\'botonModificarCentro'
 											+ i
@@ -463,16 +463,16 @@
 											+ '<button id=\'botonGestionarCitas'
 											+ j
 											+ '\' class=\'btn btn-primary \' onClick="funcionGestionarCitas(this)">'
-											+ 'Gestionar Citas'
-											+ '</button> '
+											+ 'Gestionar Citas' + '</button> '
 											+ '</td>'
 											+ '<td align="center" style="dislay: none;">'
 											+ '<button id=\'botonModificarHorarios'
 											+ j
 											+ '\' class=\'btn btn-primary \' onClick="funcionModificarHorarios(this)">'
-											+ 'Modificar Horario'
-											+ '</button> ' + '</td></tr>');
-
+											+ 'Modificar Horario' + '</button> '
+											+ '</td></tr>');
+								
+											
 				}
 			}
 		}
@@ -491,19 +491,12 @@
 			sessionStorage.MedicoEdit = JSON.stringify(jsoMedico);
 			location.href = "/medicoGestor";
 		}
-
+		
 		function funcionModificarHorarios(boton) {
-			var dni = boton.parentNode.parentNode.children[0].innerHTML;
-			var especialidad = boton.parentNode.parentNode.children[3].innerHTML;
-			var jsoMedico = {
-				"Medico" : [ {
-					"DNI" : dni,
-					"especialidad" : especialidad,
-				} ]
-			};
-			sessionStorage.MedicoHorario = JSON.stringify(jsoMedico);
+			
 			location.href = "/formularioModificarHorario";
 		}
+		
 
 		function funcionCalendario(boton) {
 			var dni = boton.parentNode.parentNode.children[0].innerHTML;

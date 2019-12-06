@@ -290,15 +290,17 @@ public class HomeController {
 	}
 	
 	@CrossOrigin(origins = "*", allowCredentials = "true")
-	@PostMapping(value = "/formularioModificarHorario", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+	@RequestMapping(value = "/formularioModificarHorario", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
 	@ResponseBody
 	public String formHorario(@RequestBody Map<String, String> jso) throws Exception {
 		System.out.println(jso);
 		JSONObject resultado = new JSONObject();
-		if(jso.get("tipo").equals("enviarDatosModificacionHorario")) {
-			String dniMedico = jso.get("DNI");
+		if(jso.get("tipo").equals("solicitarEspecialidades")) {
+			resultado = Manager.get().getEspecialidades();
+		}
+		else if(jso.get("tipo").equals("enviarDatos")) {
+			String dni = jso.get("DNI");
 			String especialidad = jso.get("especialidad");
-			String centroMedico= jso.get("centro");
 			String horaIni = jso.get("horaInicio");
 			String horaFin = jso.get("horaFin");
 			String dias = jso.get("dias");
@@ -310,10 +312,9 @@ public class HomeController {
 			System.out.println(diasElegidos[0]);
 			String centro = jso.get("centro");
 			System.out.println(centro);
-			Manager.get().eliminarHorarioMedico(dniMedico);
-			Manager.get().modificarCalendarioMedico(dniMedico, especialidad, horaIni, horaFin, diasElegidos, centroMedico);
+			resultado = Manager.get().guardarNuevoMedico(dni, especialidad, horaIni, horaFin, diasElegidos, centro);
 		}
-		return "OK";
+		return resultado.toString();
 	}
 	
 	@CrossOrigin(origins = "*", allowCredentials = "true")

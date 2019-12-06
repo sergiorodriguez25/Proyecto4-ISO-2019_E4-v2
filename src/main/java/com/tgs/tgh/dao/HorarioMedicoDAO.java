@@ -35,9 +35,5 @@ public class HorarioMedicoDAO {
 		DBBroker.get().anadirHoraMedico(dia, hora, dniMedico);
 		
 	}
-	
-	public static void eliminarHorarioMedico(String dniMedico) {
-		DBBroker.get().eliminarHorarioMedico(dniMedico);
-	}
 
 }
