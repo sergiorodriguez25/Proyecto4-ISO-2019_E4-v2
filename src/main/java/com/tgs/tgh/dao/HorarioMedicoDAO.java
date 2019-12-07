@@ -3,9 +3,7 @@ package com.tgs.tgh.dao;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-
 import org.bson.BsonDocument;
-
 import com.mongodb.client.FindIterable;
 import com.tgs.tgh.model.HorarioMedico;
 import com.tgs.tgh.model.Medico;
