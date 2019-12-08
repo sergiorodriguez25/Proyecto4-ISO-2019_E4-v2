@@ -43,6 +43,31 @@ public class GestorDAO {
 		}
 		return lista;
 	}
+	
+	@SuppressWarnings("unchecked")
+	public static Usuario getUsuarioByDNI(String DNIbuscado) throws Exception {
+		FindIterable<BsonDocument> docs = DBBroker.get().getTodosUsuarios();
+		ArrayList<Usuario> lista = new ArrayList<Usuario>();
+		Usuario buscado = new Usuario();
+		for (BsonDocument doc : docs) {
+			Usuario usuario = new Usuario(Encriptador.desencriptar(doc.get("DNI").asString().getValue()),
+					Encriptador.desencriptar(doc.get("Password").asString().getValue()),
+					doc.get("Nombre").asString().getValue(),
+					Encriptador.desencriptar(doc.get("Apellidos").asString().getValue()),
+					Encriptador.desencriptar(doc.get("FNac").asString().getValue()),
+					Encriptador.desencriptar(doc.get("Domicilio").asString().getValue()),
+					doc.get("Poblacion").asString().getValue(),
+					doc.get("CP").asString().getValue(),
+					Encriptador.desencriptar(doc.get("Telefono").asString().getValue()),
+					Encriptador.desencriptar(doc.get("Email").asString().getValue())
+			);
+			lista.add(usuario);
+			if (usuario.getDNI() == DNIbuscado) {
+				buscado = usuario;
+			}
+		}
+		return buscado;
+	}
 
 	public static void insertar(String dniNuevoGestor, String centro) {
 		DBBroker.get().insertarGestor(dniNuevoGestor, centro);

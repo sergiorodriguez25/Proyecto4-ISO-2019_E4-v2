@@ -80,8 +80,8 @@
 					<div class="dropdown-menu" aria-labelledby="dropdown01">
 						<a class="dropdown-item" href="#">Mi Perfil</a> <a
 							class="dropdown-item" data-toggle="modal"
-							data-target="#informacion">Informaci�n</a> <a
-							class="dropdown-item" href="/">Cerrar sesi�n</a>
+							data-target="#informacion">Información</a> <a
+							class="dropdown-item" href="/">Cerrar sesión</a>
 					</div></li>
 			</ul>
 		</div>
@@ -97,21 +97,21 @@
 
 						<div class="card">
 							<div class="card-body">
-								<h4>Gestor del centro m�dico</h4>
+								<h4>Gestor del centro médico</h4>
 								<p>
-									Se encuentra en la p�gina de gesti�n del centro. Para obtener
-									informaci�n sobre el uso de las diferentes funcionalidades de
-									las que dispone presione el siguiente bot�n
+									Se encuentra en la página de gestión del centro. Para obtener
+									información sobre el uso de las diferentes funcionalidades de
+									las que dispone presione el siguiente botón
 									<button type="button" class="btn btn-primary"
 										data-toggle="modal" data-target="#informacion">
-										Informaci�n</button>
+										Información</button>
 								<div class="modal fade" id="informacion" tabindex="-1"
 									role="dialog" aria-labelledby="exampleModalLongTitle"
 									aria-hidden="true">
 									<div class="modal-dialog" role="document">
 										<div class="modal-content">
 											<div class="modal-header">
-												<h5 class="modal-title" id="exampleModalLongTitle">Informaci�n</h5>
+												<h5 class="modal-title" id="exampleModalLongTitle">Información</h5>
 												<button type="button" class="close" data-dismiss="modal"
 													aria-label="Close">
 													<span aria-hidden="true">&times;</span>
@@ -121,20 +121,20 @@
 												En esta vista usted cuenta con tres tablas:
 												<h5></h5>
 												<h5>Usuarios externos</h5>
-												En esta tabla usted podr� asignar su centro m�dico,
-												convertir en m�dico y/o en gestor de su centro m�dico al
-												usuario seleccionado a trav�s de los diferentes botones que
+												En esta tabla usted podrá asignar su centro médico,
+												convertir en médico y/o en gestor de su centro m�dico al
+												usuario seleccionado a través de los diferentes botones que
 												puede observar en la tabla mencionada.
 												<h5></h5>
 												<h5>Pacientes del centro</h5>
-												En esta tabla usted podr� convertir en m�dico y/o en gestor
-												de su centro m�dico al usuario seleccionado, tambi�n podr�
-												ver su calendario a trav�s de los diferentes botones que
+												En esta tabla usted podrá convertir en médico y/o en gestor
+												de su centro médico al usuario seleccionado, también podrá
+												ver su calendario a través de los diferentes botones que
 												puede observar en la tabla mencionada.
 												<h5></h5>
-												<h5>M�dicos del centro</h5>
-												En esta tabla usted podr� gestionar las citas(modificar o
-												eliminar) del m�dico de su centro m�dico, a trav�s de los
+												<h5>Médicos del centro</h5>
+												En esta tabla usted podrá gestionar las citas(modificar o
+												eliminar) del médico de su centro médico, a través de los
 												diferentes botones que puede observar en la tabla
 												mencionada.
 											</div>
@@ -171,9 +171,9 @@
 				<li class="nav-item"><a class="nav-link" data-toggle="tab"
 					href="#menu2">Pacientes Del Centro</a></li>
 				<li class="nav-item"><a class="nav-link" data-toggle="tab"
-					href="#menu3">M�dicos del Centro</a></li>
+					href="#menu3">Médicos del Centro</a></li>
 				<li class="nav-item"><a class="nav-link" data-toggle="tab"
-					href="#menu4">Usuarios del Centro</a></li>	
+					href="#menu4">Buscar usuario del Centro</a></li>	
 			</ul>
 
 			<div class="tab-content">
@@ -181,9 +181,9 @@
 					<div>
 						<br></br>
 					</div>
-					<h3>Gesti�n de Usuarios Externos</h3>
+					<h3>Gestión de Usuarios Externos</h3>
 					<strong class="d-inline-block mb-2 text-primary center">Pacientes
-						externos al Centro M�dico</strong>
+						externos al Centro Médico</strong>
 					<div class="row d-flex justify-content-center">
 						<div class="container">
 							<table id="TablaUsuarios" class="table table-bordered">
@@ -191,7 +191,7 @@
 									<tr class="table-primary">
 										<td align="center" scope="col"><b>DNI</b></td>
 										<td align="center" scope="col"><b>Nombre</b></td>
-										<td align="center" scope="col"><b>Centro M�dico</b></td>
+										<td align="center" scope="col"><b>Centro Médico</b></td>
 									</tr>
 								</thead>
 							</table>
@@ -202,9 +202,9 @@
 					<div>
 						<br></br>
 					</div>
-					<h3>Gesti�n de Pacientes Del Centro M�dico</h3>
+					<h3>Gestión de Pacientes Del Centro Médico</h3>
 					<strong class="d-inline-block mb-2 text-success">Pacientes
-						del Centro M�dico</strong>
+						del Centro Médico</strong>
 					<div class="row d-flex justify-content-center">
 						<div class="container">
 							<table id="TablaUsuariosCentro" class="table table-bordered">
@@ -212,7 +212,7 @@
 									<tr class="table-primary">
 										<td align="center" scope="col"><b>DNI</b></td>
 										<td align="center" scope="col"><b>Nombre</b></td>
-										<td align="center" scope="col"><b>Centro M�dico</b></td>
+										<td align="center" scope="col"><b>Centro Médico</b></td>
 									</tr>
 								</thead>
 							</table>
@@ -223,9 +223,9 @@
 					<div>
 						<br></br>
 					</div>
-					<h3>Gesti�n de M�dicos Del Centro</h3>
+					<h3>Gestión de Médicos Del Centro</h3>
 					<div class="row mb-2">
-						<strong class="d-inline-block mb-2 text-primary center">M�dicos
+						<strong class="d-inline-block mb-2 text-primary center">Médicos
 							del Centro</strong>
 						<div class="row d-flex justify-content-center">
 							<div class="container">
@@ -234,9 +234,9 @@
 										<tr class="table-primary">
 											<td align="center" scope="col"><b>DNI</b></td>
 											<td align="center" scope="col"><b>Nombre</b></td>
-											<td align="center" scope="col"><b>Centro M�dico</b>
+											<td align="center" scope="col"><b>Centro Médico</b>
 											<td align="center" scope="col"><b>Especialidad</b>
-											<td align="center" scope="col"><b>Tel�fono</b></td>
+											<td align="center" scope="col"><b>Teléfono</b></td>
 										</tr>
 									</thead>
 								</table>
@@ -248,24 +248,19 @@
 					<div>
 						<br></br>
 					</div>
-					<h3>Gestión de Usuarios del Centro Médico</h3>
-					<strong class="d-inline-block mb-2 text-success">Usuarios del centro médico</strong>
-					<label for="inputUsuarioBuscado" class="sr-only">Usuario a buscar</label>
-					<input type="text" id="inputUsuarioBuscado" name = "UsuarioBuscado" class="form-control" placeholder="DNI o nombre del usuario a buscar" required autofocus>
+					<h3>Buscar usuario del centro médico</h3>
+					<strong class="d-inline-block mb-2 text-success">Buscar por DNI</strong>
+					<label for="inputUsuarioDNI" class="sr-only">Usuario a buscar</label>
+					<input type="text" id="inputUsuarioDNI" name = "BuscaDNIUsuario" class="form-control" placeholder="DNI" required autofocus>
+					<button type="button" (click)="buscarUsuario($event)" >Buscar</button>
 					<br></br>
-					<div class="row d-flex justify-content-center">
-						<div class="container">
-							<table id="TablaUsuariosCentroMedico" class="table table-bordered">
-								<thead>
-									<tr class="table-primary">
-										<td align="center" scope="col"><b>DNI</b></td>
-										<td align="center" scope="col"><b>Nombre</b></td>
-										<td align="center" scope="col"><b>Centro médico</b></td>
-									</tr>
-								</thead>
-							</table>
-						</div>
-					</div>
+					
+					<br></br>
+					<strong class="d-inline-block mb-2 text-success">Buscar por Nombre</strong>
+					<label for="inputUsuarioNOM" class="sr-only">Usuario a buscar</label>
+					<input type="text" id="inputUsuarioNOM" name = "BuscaNOMUsuario" class="form-control" placeholder="Nombre" required autofocus>
+					<br></br>
+					
 				</div>
 			</div>
 		</div>
@@ -369,13 +364,14 @@
 			});
 		}
 
+
 		function UsuariosOK(respuesta) {
 			var jsoUsuarios = JSON.parse(respuesta);
 			console.log(jsoUsuarios);
 			console.log(jsoUsuarios.Pacientes.length);
 			var jsoUser = JSON.parse(sessionStorage.usuario);
 			var centroMedicoGestor = jsoUser.resultado.gestor.centro;
-
+			
 			for (var i = 0; i < jsoUsuarios.Pacientes.length; i++) {
 				if (jsoUsuarios.Pacientes[i].centroMedico != centroMedicoGestor) {
 					$("#TablaUsuarios")
@@ -447,39 +443,7 @@
 											+ '\' class=\'btn btn-primary \' onClick="funcionConvertirGestor(this)">'
 											+ 'Convertir en Gestor'
 											+ '</button> ' + '</td></tr>');
-				}
-
-				if ((jsoUsuarios.Pacientes[i].centroMedico == centroMedicoGestor) && (jsoUsuarios.Pacientes[i].DNI != jsoUsuarios.Medicos[i].DNIMedico)) {
-					$("#TablaUsuariosCentroMedico")
-							.append(
-									'<tr><td align="center" style="dislay: none;">'
-											+ jsoUsuarios.Pacientes[i].DNI
-											+ '</td>'
-											+ '<td align="center" style="dislay: none;">'
-											+ jsoUsuarios.Pacientes[i].nombre
-											+ " "
-											+ jsoUsuarios.Pacientes[i].apellidos
-											+ '</td>'
-											+ '<td align="center" style="dislay: none;">'
-											+ jsoUsuarios.Pacientes[i].centroMedico
-											+ '</td>'
-											+ '<td align="center" style="dislay: none;">'
-											+ '<button id=\'botonBuscarUsuario'
-											+ i
-											+ '\' class=\'btn btn-primary \' onClick="funcionBuscarUsuario(this)">'
-											+ 'Buscar usuario'
-											+ '</button> '
-											+ '</td>'
-											+ '<td align="center" style="dislay: none;">'
-											+ '</td></tr>');
-				}
-				/* if($("inputUsuarioBuscado") != null){
-					for (var j = 0; j < $("tablaUsuariosCentroMedico").length; j++) {
-						if(($("inputUsuarioBuscado") == $("tablaUsuariosCentroMedico")[j].DNI) || ($("inputUsuarioBuscado") == $("tablaUsuariosCentroMedico")[j].nombre)){
-
-						}
-					}
-				} */
+				}	
 				
 			}
 
@@ -633,6 +597,69 @@
 			var jsoUser = JSON.parse(sessionStorage.usuario);
 			
 		}
+
+		function buscarUsuario() {
+			var data = {
+				tipo : "getUser"
+			};
+			var url = "/gestor";
+			var type = "POST";
+			var success;
+			var async = false;
+			var xhrFields;
+			var headers = {
+				'Content-Type' : 'application/json'
+			};
+
+			data = JSON.stringify(data);
+			$.ajax({
+				type : type,
+				url : url,
+				data : data,
+				async : async,
+				headers : headers,
+				xhrFields : {
+					withCredentials : true
+				},
+				success : buscarUsuarioOK,
+				error : buscarUsuarioError
+			});
+		}
+
+		function buscarUsuarioOK(respuesta) {
+			var jsoUsuarios = JSON.parse(respuesta);
+			console.log(jsoUsuarios);
+			console.log(jsoUsuarios.Pacientes.length);
+			var jsoUser = JSON.parse(sessionStorage.usuario);
+			var centroMedicoGestor = jsoUser.resultado.gestor.centro;
+			var dnibuscado = $('#inputUsuarioDNI').val();
+			var encontrado = false;
+			
+			for (var i = 0; i < jsoUsuarios.Pacientes.length; i++) {
+				if (jsoUsuarios.Pacientes[i].centroMedico == centroMedicoGestor && jsoUsuarios.Pacientes[i].DNI == dnibuscado) {
+					encontrado = true;
+					var jsoPaciente = {
+					"Paciente" : [ {
+					"DNI" : dnibuscado,
+					"nombre" : jsoUsuarios.Pacientes[i].nombre+' '+jsoUsuarios.Pacientes[i].apellidos
+					} ]
+			}; 
+					sessionStorage.PacienteEdit = JSON.stringify(jsoPaciente);
+					location.href = "/citasGestor";
+				}
+			}
+			if(encontrado == false){
+				swal("Usuario no encontrado", {
+				    	icon: "info"});
+			}
+		}	
+
+		function buscarUsuarioError(e) {
+			console.log(e);
+		}
+
+
+
 	</script>
 </body>
 </html>

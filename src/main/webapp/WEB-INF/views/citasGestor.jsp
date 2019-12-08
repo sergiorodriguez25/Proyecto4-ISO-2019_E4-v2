@@ -206,7 +206,7 @@
 		var referrer = document.referrer;
 		if (referrer != 'http://localhost:8080/'
 				&& referrer != 'https://sgc-e4.herokuapp.com/'
-					&& referrer != 'https://sgc-e4.herokuapp.com/
+					&& referrer != 'https://sgc-e4.herokuapp.com/'
 						&& referrer != 'sgc-e4.herokuapp.com/'
 				&& referrer != 'http://localhost:8080/gestor'
 				&& referrer != 'https://sgc-e4.herokuapp.com/gestor'
