@@ -251,7 +251,7 @@
 					<h3>Gestión de Usuarios del Centro Médico</h3>
 					<strong class="d-inline-block mb-2 text-success">Usuarios del centro médico</strong>
 					<label for="inputUsuarioBuscado" class="sr-only">Usuario a buscar</label>
-					<input type="text" id="inputUsuarioDNI" name = "UsuarioDNI" class="form-control" placeholder="DNI o nombre a buscar" required autofocus>
+					<input type="text" id="inputUsuarioBuscado" name = "UsuarioBuscado" class="form-control" placeholder="DNI o nombre del usuario a buscar" required autofocus>
 					<br></br>
 					<div class="row d-flex justify-content-center">
 						<div class="container">
@@ -462,6 +462,13 @@
 											+ '</td>'
 											+ '<td align="center" style="dislay: none;">'
 											+ jsoUsuarios.Pacientes[i].centroMedico
+											+ '</td>'
+											+ '<td align="center" style="dislay: none;">'
+											+ '<button id=\'botonBuscarUsuario'
+											+ i
+											+ '\' class=\'btn btn-primary \' onClick="funcionBuscarUsuario(this)">'
+											+ 'Buscar usuario'
+											+ '</button> '
 											+ '</td>'
 											+ '<td align="center" style="dislay: none;">'
 											+ '</td></tr>');
