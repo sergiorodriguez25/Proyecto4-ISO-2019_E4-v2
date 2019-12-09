@@ -48,7 +48,6 @@
     <![endif]-->
 
 </head>
-<!-- hola -->
 <style>
 .bd-placeholder-img {
 	font-size: 1.125rem;
@@ -110,8 +109,9 @@
 							<div class="card">
 								<div class="card-body">
 									<h4>Formulario de Asignación de Horario Médico</h4>
-									<p>Para asignar el horario del médico seleccione los días que va a trabajar y la hora
-										inicio y hora fin de su jornada laboral.</p>
+									<p>Para asignar el horario del médico seleccione los días
+										que va a trabajar y la hora inicio y hora fin de su jornada
+										laboral.</p>
 								</div>
 								<div class="modal fade" id="informacion" tabindex="-1"
 									role="dialog" aria-labelledby="exampleModalLongTitle"
@@ -129,9 +129,9 @@
 												En esta vista usted puede:
 												<h5></h5>
 												<h5>Asignar horario al médico</h5>
-												Para asignar el horario del médico usted debe seleccionar la
-												especialidad del médico, los días que va a trabajar y la
-												hora inicio y hora fin de su jornada laboral.
+												Para asignar el horario del médico usted debe seleccionar
+												los días que va a trabajar y la hora inicio y hora fin de su
+												jornada laboral.
 											</div>
 											<div class="modal-footer">
 												<button type="button" class="btn btn-secondary"
@@ -151,8 +151,8 @@
 			<div class="container center">
 				<div class="jumbotron jumbotron-fluid">
 					<div align='center'>
-						<label id="labelEspecialidadMal"></label> <br></br> <label
-							for="diasSemana">Seleccione los días que va a trabajar</label>
+						<label for="diasSemana">Seleccione los días que va a
+							trabajar</label>
 						<div class="container center">
 							<div class="col-md-6 mb-3 text-left">
 								<div class="form-check">
@@ -233,12 +233,9 @@
 
 	<script type="text/javascript">
 		jQuery(document).ready(function($) {
-							
-							var jsoDNI = JSON.parse(sessionStorage.nuevoMedico);
-							var dni = jsoDNI.DNIMedico.DNI;
-							pedirEspecialidades();
-							
-							
+
+			var jsoDNI = JSON.parse(sessionStorage.MedicoHorario);
+			var dni = jsoDNI.DNI;
 
 			// 							$('DNIMedico').html(dni);
 			/*
@@ -252,68 +249,15 @@
 			// 								forma.action = "/error";
 			// 								forma.submit();
 			// 							}
-			var jsoDNI = JSON.parse(sessionStorage.nuevoMedico);
-			var dni = jsoDNI.DNIMedico.DNI;
-			pedirEspecialidades();
+			var jsoDNI = JSON.parse(sessionStorage.MedicoHorario);
+			var dni = jsoDNI.DNI;
 
 		});
 
-		function pedirEspecialidades() {
-			var data = {
-				tipo : "solicitarEspecialidades"
-			};
-			var url = "/formularioTrabajador";
-			var type = "POST";
-			var success;
-			var async = false;
-			var xhrFields;
-			var headers = {
-				'Content-Type' : 'application/json'
-			};
-
-			data = JSON.stringify(data);
-			console.log(data);
-			$.ajax({
-				type : type,
-				url : url,
-				data : data,
-				async : async,
-				headers : headers,
-				xhrFields : {
-					withCredentials : true
-				},
-				success : getEspecialidadesOK,
-				error : getEspecialidadesError
-			});
-		}
-
-		function getEspecialidadesOK(respuesta) {
-			console.log(respuesta);
-			var jsoespecialidades = JSON.parse(respuesta);
-			console.log(jsoespecialidades);
-			cargarEspecialidades(jsoespecialidades);
-		}
-
-		function getEspecialidadesError(e) {
-			console.log(e);
-		}
-
-		function cargarEspecialidades(jsoEspecialidades) {
-			var select = document.getElementById("especialidad");
-			numEspecialidades = jsoEspecialidades.Especialidades.length;
-			for (var i = 0; i <= numEspecialidades; i++) {
-				var option = document.createElement('option');
-				option.text = option.value = jsoEspecialidades.Especialidades[i][0];
-				select.add(option, 0);
-			}
-		}
-
 		function comprobarValidezDatos() {
 			var cuenta = 0;
-			document.getElementById("labelEspecialidadMal").style.display = 'none';
 			document.getElementById("labelDiaMal").style.display = 'none';
 			document.getElementById("labelHoraMal").style.display = 'none';
-			cuenta = comprobarEspecialidad();
 			cuenta = comprobarDia() + cuenta;
 			cuenta = comprobarValidezHora(document.getElementById("horaInicio").value)
 					+ cuenta;
@@ -321,17 +265,6 @@
 					+ cuenta;
 			console.log(cuenta);
 			return cuenta;
-		}
-
-		function comprobarEspecialidad() {
-			if (document.getElementById("especialidad").value == "") {
-				document.getElementById("labelEspecialidadMal").style.display = 'inline';
-				$('#labelEspecialidadMal').html(
-						"Debe seleccionar una especialidad");
-				$('#labelEspecialidadMal').css("color", "red");
-				return 1;
-			}
-			return 0;
 		}
 
 		function comprobarDia() {
@@ -451,11 +384,6 @@
 									.click(
 											function(event) {
 												if (comprobarValidezDatos() == 0) {
-													console
-															.log(document
-																	.getElementById("especialidad").value);
-													var especialidadSelecc = (document
-															.getElementById("especialidad").value);
 													var diasSelecc = new Array();
 													var i = 0;
 													if ($('#lunes').is(
@@ -501,6 +429,89 @@
 															.getElementById("horaFin").value);
 													console.log(horaInicio);
 													console.log(horaFin);
+
+													enviarDatosModificacionHorario(diasSelecc,
+															horaInicio, horaFin);
+												}
+											});
+						});
+
+		function enviarDatosModificacionHorario(dias, horaI, horaF) {
+			var jsoMed = JSON.parse(sessionStorage.MedicoHorario);
+			var jsodias = JSON.stringify(dias);
+			var jsoGestor = JSON.parse(sessionStorage.usuario);
+			var centro = jsoGestor.resultado.gestor.centro;
+			var data = {
+				DNI : jsoMed.Medico[0].DNI,
+				especialidad : jsoMed.Medico[0].especialidad,
+				dias : jsodias,
+				horaInicio : horaI,
+				horaFin : horaF,
+				centro : centro,
+				tipo : "enviarDatosModificacionHorario"
+			};
+			var url = "/formularioModificarHorario";
+			var type = "POST";
+			var success;
+			var xhrFields;
+			var headers = {
+				'Content-Type' : 'application/json'
+			};
+
+			data = JSON.stringify(data);
+			console.log(data);
+			$.ajax({
+				type : type,
+				url : url,
+				data : data,
+				headers : headers,
+				xhrFields : {
+					withCredentials : true
+				},
+				success : HorarioModificadoOK,
+				error : HorarioModificadoError
+			});
+		}
+
+		function HorarioModificadoOK(respuesta) {
+			console.log("Horario modificado OK");
+			swal({
+				title : "Horario Modificado",
+				icon : "success",
+			}).then(function() {
+				window.location.href = "/gestor";
+			});
+		}
+
+		function HorarioModificadoError(e) {
+			console.log(e);
+		}
+
+		function comprobarHora(texto) {
+			document.getElementById("noHayHora").style.display = 'none';
+			if (texto == '') {
+				document.getElementById("noHayHora").style.display = 'inline';
+				$('#noHayHora')
+						.html("Tiene que escoger una hora para su cita.");
+				$('#noHayHora').css("color", "red");
+				return 1;
+			}
+			return 0;
+		}
+
+		function comprobarFecha(texto) {
+			document.getElementById("fecha").style.display = 'none';
+			if (texto == '') {
+				document.getElementById("fecha").style.display = 'inline';
+				$('#fecha').html("Tiene que escoger un día para su cita.");
+				$('#fecha').css("color", "red");
+				return 1;
+			}
+			return 0;
+		}
+	</script>
+</body>
+</html>sole.log(horaFin);
 
 													enviarDatos(
 															especialidadSelecc,
