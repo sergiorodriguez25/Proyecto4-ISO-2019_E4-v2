@@ -184,6 +184,7 @@
 						externos al Centro Médico</strong>
 					<div class="row d-flex justify-content-center">
 						<div class="container">
+							<input type="text" id="inputUsuarios" onkeyup="buscarUsuarios()" placeholder="DNI" title="DNI">
 							<table id="TablaUsuarios" class="table table-bordered">
 								<thead>
 									<tr class="table-primary">
@@ -205,6 +206,7 @@
 						del Centro Médico</strong>
 					<div class="row d-flex justify-content-center">
 						<div class="container">
+							<input type="text" id="inputPacientes" onkeyup="buscarPacientes()" placeholder="DNI" title="DNI">
 							<table id="TablaUsuariosCentro" class="table table-bordered">
 								<thead>
 									<tr class="table-primary">
@@ -227,6 +229,7 @@
 							del Centro</strong>
 						<div class="row d-flex justify-content-center">
 							<div class="container">
+							<input type="text" id="inputMedicos" onkeyup="buscarMedicos()" placeholder="DNI" title="DNI">
 								<table id="TablaMedicosCentro" class="table table-bordered">
 									<thead>
 										<tr class="table-primary">
@@ -260,7 +263,46 @@
 		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 		crossorigin="anonymous"></script>
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
+<script>
+			function buscarMedicos() {
+			  var input, filter, table, tr, td, i, txtValue;
+			  input = document.getElementById("inputMedicos");
+			  filter = input.value.toUpperCase();
+			  table = document.getElementById("TablaMedicosCentro");
+			  tr = table.getElementsByTagName("tr");
+			  for (i = 0; i < tr.length; i++) {
+				td = tr[i].getElementsByTagName("td")[0];
+				if (td) {
+				  txtValue = td.textContent || td.innerText;
+				  if (txtValue.toUpperCase().indexOf(filter) > -1) {
+					tr[i].style.display = "";
+				  } else {
+					tr[i].style.display = "none";
+				  }
+				}       
+			  }
+			}
+	</script>
+	<script>
+			function buscarPacientes() {
+			  var input, filter, table, tr, td, i, txtValue;
+			  input = document.getElementById("inputPacientes");
+			  filter = input.value.toUpperCase();
+			  table = document.getElementById("TablaUsuariosCentro");
+			  tr = table.getElementsByTagName("tr");
+			  for (i = 0; i < tr.length; i++) {
+				td = tr[i].getElementsByTagName("td")[0];
+				if (td) {
+				  txtValue = td.textContent || td.innerText;
+				  if (txtValue.toUpperCase().indexOf(filter) > -1) {
+					tr[i].style.display = "";
+				  } else {
+					tr[i].style.display = "none";
+				  }
+				}       
+			  }
+			}
+	</script>
 	<script type="text/javascript">
 		jQuery(document)
 				.ready(
