@@ -18,7 +18,12 @@
 		<tomcat.version>8.5.23</tomcat.version>
 		<maven.compiler.source>1.6</maven.compiler.source>
 		<maven.compiler.target>1.6</maven.compiler.target>
+		<sonar.projectKey>Proyecto4-ISO-2019_E4-v2</sonar.projectKey>
+		<sonar.organization>sergiorodriguez25</sonar.organization>
+		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
+		<sonar.login>3b48feb7612e03eee671ec6a9bafc9420bdabf6e</sonar.login>
 	</properties>
+
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -42,6 +47,8 @@
 				<!-- ... -->
 			</exclusions>
 		</dependency>
+
+
 
 		<!-- Spring -->
 		<dependency>
