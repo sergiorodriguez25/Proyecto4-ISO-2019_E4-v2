@@ -184,7 +184,8 @@
 						externos al Centro Médico</strong>
 					<div class="row d-flex justify-content-center">
 						<div class="container">
-							<input type="text" id="inputUsuarios" onkeyup="buscarUsuarios()" placeholder="DNI" title="DNI">
+							<input type="text" id="inputUsuarios" onkeyup="buscarUsuarios()"
+								placeholder="DNI" title="DNI">
 							<table id="TablaUsuarios" class="table table-bordered">
 								<thead>
 									<tr class="table-primary">
@@ -206,7 +207,8 @@
 						del Centro Médico</strong>
 					<div class="row d-flex justify-content-center">
 						<div class="container">
-							<input type="text" id="inputPacientes" onkeyup="buscarPacientes()" placeholder="DNI" title="DNI">
+							<input type="text" id="inputPacientes"
+								onkeyup="buscarPacientes()" placeholder="DNI" title="DNI">
 							<table id="TablaUsuariosCentro" class="table table-bordered">
 								<thead>
 									<tr class="table-primary">
@@ -229,7 +231,8 @@
 							del Centro</strong>
 						<div class="row d-flex justify-content-center">
 							<div class="container">
-							<input type="text" id="inputMedicos" onkeyup="buscarMedicos()" placeholder="DNI" title="DNI">
+								<input type="text" id="inputMedicos" onkeyup="buscarMedicos()"
+									placeholder="DNI" title="DNI">
 								<table id="TablaMedicosCentro" class="table table-bordered">
 									<thead>
 										<tr class="table-primary">
@@ -263,66 +266,7 @@
 		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 		crossorigin="anonymous"></script>
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-<script>
-			function buscarMedicos() {
-			  var input, filter, table, tr, td, i, txtValue;
-			  input = document.getElementById("inputMedicos");
-			  filter = input.value.toUpperCase();
-			  table = document.getElementById("TablaMedicosCentro");
-			  tr = table.getElementsByTagName("tr");
-			  for (i = 0; i < tr.length; i++) {
-				td = tr[i].getElementsByTagName("td")[0];
-				if (td) {
-				  txtValue = td.textContent || td.innerText;
-				  if (txtValue.toUpperCase().indexOf(filter) > -1) {
-					tr[i].style.display = "";
-				  } else {
-					tr[i].style.display = "none";
-				  }
-				}       
-			  }
-			}
-	</script>
-	<script>
-			function buscarPacientes() {
-			  var input, filter, table, tr, td, i, txtValue;
-			  input = document.getElementById("inputPacientes");
-			  filter = input.value.toUpperCase();
-			  table = document.getElementById("TablaUsuariosCentro");
-			  tr = table.getElementsByTagName("tr");
-			  for (i = 0; i < tr.length; i++) {
-				td = tr[i].getElementsByTagName("td")[0];
-				if (td) {
-				  txtValue = td.textContent || td.innerText;
-				  if (txtValue.toUpperCase().indexOf(filter) > -1) {
-					tr[i].style.display = "";
-				  } else {
-					tr[i].style.display = "none";
-				  }
-				}       
-			  }
-			}
-	</script>
-	<script>
-			function buscarUsuarios() {
-			  var input, filter, table, tr, td, i, txtValue;
-			  input = document.getElementById("inputUsuarios");
-			  filter = input.value.toUpperCase();
-			  table = document.getElementById("TablaUsuarios");
-			  tr = table.getElementsByTagName("tr");
-			  for (i = 0; i < tr.length; i++) {
-				td = tr[i].getElementsByTagName("td")[0];
-				if (td) {
-				  txtValue = td.textContent || td.innerText;
-				  if (txtValue.toUpperCase().indexOf(filter) > -1) {
-					tr[i].style.display = "";
-				  } else {
-					tr[i].style.display = "none";
-				  }
-				}       
-			  }
-			}
-	</script>
+
 	<script type="text/javascript">
 		jQuery(document)
 				.ready(
@@ -370,8 +314,7 @@
 									&& referrer != 'https://sgc-e4.herokuapp.com/calendarioGlobal'
 									&& referrer != 'sgc-e4.herokuapp.com/formularioModificarHorario'
 									&& referrer != 'http://localhost:8080/formularioModificarHorario'
-									&& referrer != 'https://sgc-e4.herokuapp.com/formularioModificarHorario'
-									) {
+									&& referrer != 'https://sgc-e4.herokuapp.com/formularioModificarHorario') {
 								var forma = document.forms[0];
 								forma.action = "/error";
 								forma.submit();
@@ -410,6 +353,61 @@
 			});
 		}
 
+		function buscarMedicos() {
+			var input, filter, table, tr, td, i, txtValue;
+			input = document.getElementById("inputMedicos");
+			filter = input.value.toUpperCase();
+			table = document.getElementById("TablaMedicosCentro");
+			tr = table.getElementsByTagName("tr");
+			for (i = 0; i < tr.length; i++) {
+				td = tr[i].getElementsByTagName("td")[0];
+				if (td) {
+					txtValue = td.textContent || td.innerText;
+					if (txtValue.toUpperCase().indexOf(filter) > -1) {
+						tr[i].style.display = "";
+					} else {
+						tr[i].style.display = "none";
+					}
+				}
+			}
+		}
+		function buscarPacientes() {
+			var input, filter, table, tr, td, i, txtValue;
+			input = document.getElementById("inputPacientes");
+			filter = input.value.toUpperCase();
+			table = document.getElementById("TablaUsuariosCentro");
+			tr = table.getElementsByTagName("tr");
+			for (i = 0; i < tr.length; i++) {
+				td = tr[i].getElementsByTagName("td")[0];
+				if (td) {
+					txtValue = td.textContent || td.innerText;
+					if (txtValue.toUpperCase().indexOf(filter) > -1) {
+						tr[i].style.display = "";
+					} else {
+						tr[i].style.display = "none";
+					}
+				}
+			}
+		}
+
+		function buscarUsuarios() {
+			var input, filter, table, tr, td, i, txtValue;
+			input = document.getElementById("inputUsuarios");
+			filter = input.value.toUpperCase();
+			table = document.getElementById("TablaUsuarios");
+			tr = table.getElementsByTagName("tr");
+			for (i = 0; i < tr.length; i++) {
+				td = tr[i].getElementsByTagName("td")[0];
+				if (td) {
+					txtValue = td.textContent || td.innerText;
+					if (txtValue.toUpperCase().indexOf(filter) > -1) {
+						tr[i].style.display = "";
+					} else {
+						tr[i].style.display = "none";
+					}
+				}
+			}
+		}
 		function UsuariosOK(respuesta) {
 			var jsoUsuarios = JSON.parse(respuesta);
 			console.log(jsoUsuarios);
@@ -487,13 +485,13 @@
 											+ i
 											+ '\' class=\'btn btn-primary \' onClick="funcionConvertirGestor(this)">'
 											+ 'Convertir en Gestor'
-											+ '</button> ' + '</td>'
+											+ '</button> '
+											+ '</td>'
 											+ '<td align="center" style="dislay: none;">'
 											+ '<button id=\'botonModificarCentro'
 											+ i
 											+ '\' class=\'btn btn-primary \' onClick="funcionCambiarMedicos(this)">'
-											+ 'Cambiar Centro'
-											+ '</button> '
+											+ 'Cambiar Centro' + '</button> '
 											+ '</td></tr>');
 				}
 			}
@@ -525,16 +523,16 @@
 											+ '<button id=\'botonGestionarCitas'
 											+ j
 											+ '\' class=\'btn btn-primary \' onClick="funcionGestionarCitas(this)">'
-											+ 'Gestionar Citas' + '</button> '
+											+ 'Gestionar Citas'
+											+ '</button> '
 											+ '</td>'
 											+ '<td align="center" style="dislay: none;">'
 											+ '<button id=\'botonModificarHorarios'
 											+ j
 											+ '\' class=\'btn btn-primary \' onClick="funcionModificarHorarios(this)">'
-											+ 'Modificar Horario' + '</button> '
-											+ '</td></tr>');
-								
-											
+											+ 'Modificar Horario'
+											+ '</button> ' + '</td></tr>');
+
 				}
 			}
 		}
@@ -553,12 +551,11 @@
 			sessionStorage.MedicoEdit = JSON.stringify(jsoMedico);
 			location.href = "/medicoGestor";
 		}
-		
+
 		function funcionModificarHorarios(boton) {
-			
+
 			location.href = "/formularioModificarHorario";
 		}
-		
 
 		function funcionCalendario(boton) {
 			var dni = boton.parentNode.parentNode.children[0].innerHTML;
@@ -650,14 +647,14 @@
 			sessionStorage.dniModificarCentro = boton.parentNode.parentNode.children[0].textContent;
 			console.log(dni);
 			var data = {
-					DNI : dni,
-					tipo : "eliminar"
+				DNI : dni,
+				tipo : "eliminar"
 			};
 			console.log(data);
 			enviarEliminarGrupoMedico(data);
 			window.location.href = "/formularioPaciente";
 		}
-		
+
 		function enviarEliminarGrupoMedico(data) {
 			var url = "/grupomedico";
 			var type = "POST";
@@ -667,20 +664,20 @@
 			var headers = {
 				'Content-Type' : 'application/json'
 			};
-			
+
 			data = JSON.stringify(data);
 			$.ajax({
-				type: type,
-				url: url,
-				data: data,
-		        headers : headers,
-		        xhrFields: {
-		            withCredentials: true
-		        }
+				type : type,
+				url : url,
+				data : data,
+				headers : headers,
+				xhrFields : {
+					withCredentials : true
+				}
 
 			});
 		}
-		
+
 		function funcionModificarCentro(boton) {
 			sessionStorage.dniModificarCentro = boton.parentNode.parentNode.children[0].textContent;
 			window.location.href = "/formularioPaciente";
