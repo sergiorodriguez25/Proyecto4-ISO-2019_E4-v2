@@ -220,6 +220,10 @@ public class Manager {
 	public void anadirHoraMedico(String dia, String hora, String dniMedico) {
 		HorarioMedicoDAO.anadirHoraMedico(dia, hora, dniMedico);
 	}
+	
+	public void eliminarHorarioMedico(String dniMedico) {
+		HorarioMedicoDAO.eliminarHorarioMedico(dniMedico);
+	}
 
 	public JSONArray getCitasMedico(String dni) throws Throwable {
 		List<Cita> citas = CitaDAO.getCitasMedicoDAO(dni);
