@@ -165,7 +165,6 @@
 				<br></br>
 			</div>
 
-
 			<ul class="nav nav-tabs" id="pestanas">
 				<li class="nav-item"><a class="nav-link active"
 					data-toggle="tab" href="#menu1">Usuarios Externos</a></li>
