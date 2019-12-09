@@ -493,7 +493,15 @@
 		}
 		
 		function funcionModificarHorarios(boton) {
-			
+			var dni = boton.parentNode.parentNode.children[0].innerHTML;
+			var especialidad = boton.parentNode.parentNode.children[3].innerHTML;
+			var jsoMedico = {
+				"Medico" : [ {
+					"DNI" : dni,
+					"especialidad" : especialidad,
+				} ]
+			};
+			sessionStorage.MedicoHorario = JSON.stringify(jsoMedico);
 			location.href = "/formularioModificarHorario";
 		}
 		
