@@ -1,6 +1,7 @@
 @featureTest
 Feature: Comprobar la correcta visualizacion de citas
 
+
   @Scenario1
   Scenario: Al acceder a esta pagina se tienen que mostrar el nombre y apellidos del usuario logeado
     Given Tenemos un usuario
