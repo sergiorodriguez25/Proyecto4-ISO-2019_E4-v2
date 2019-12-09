@@ -409,8 +409,7 @@
 				}
 			}
 		}
-		
-		
+
 		function UsuariosOK(respuesta) {
 			var jsoUsuarios = JSON.parse(respuesta);
 			console.log(jsoUsuarios);
@@ -533,11 +532,12 @@
 											+ '<button id=\'botonModificarHorarios'
 											+ j
 											+ '\' class=\'btn btn-primary \' onClick="funcionModificarHorarios(this)">'
-											+ 'Modificar Horario' + '</button> '
-											+ '</td></tr>');
+											+ 'Modificar Horario'
+											+ '</button> ' + '</td></tr>');
 
 				}
 			}
+
 		}
 
 		function funcionGestionarCitas(boton) {
@@ -555,7 +555,6 @@
 			location.href = "/medicoGestor";
 		}
 
-		
 		function funcionModificarHorarios(boton) {
 			var dni = boton.parentNode.parentNode.children[0].innerHTML;
 			var especialidad = boton.parentNode.parentNode.children[3].innerHTML;
