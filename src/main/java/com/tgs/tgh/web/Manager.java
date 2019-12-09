@@ -296,6 +296,58 @@ public class Manager {
 		jsoEspecialidades.put("Especialidades", lista);
 		return jsoEspecialidades;
 	}
+	
+	public void modificarCalendarioMedico(String dniMedico, String especialidad, String horaIni, String horaFin, String[] diasElegidos, String centroMedico) {
+		String duracion = EspecialidadDAO.getDuracion(especialidad);
+		int duracionInt = Integer.parseInt(duracion);
+		
+		SimpleDateFormat format = new SimpleDateFormat("HH:mm");
+		Date dateIni = new Date();
+		Date dateFin = new Date();
+		try {
+			dateIni = format.parse(horaIni);
+			System.out.println(dateIni);
+			dateFin = format.parse(horaFin);
+			System.out.println(dateFin);
+
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
+		Calendar calendarFin = GregorianCalendar.getInstance();
+		calendarFin.setTime(dateFin);
+		int hourFin = calendarFin.get(Calendar.HOUR_OF_DAY);
+		int minFin = calendarFin.get(Calendar.MINUTE);
+		System.out.println(hourFin + " " + minFin);
+		Calendar calendarPonerPrimeraHora = GregorianCalendar.getInstance();
+		calendarPonerPrimeraHora.setTime(dateIni);
+		int hourFirst = calendarPonerPrimeraHora.get(Calendar.HOUR_OF_DAY);
+		int minFirst = calendarPonerPrimeraHora.get(Calendar.MINUTE);
+		String primeraHora = montarHoras(hourFirst, minFirst);
+		System.out.println(primeraHora);
+		for (int i = 0; i < diasElegidos.length; i++)
+			HorarioMedicoDAO.anadirHoraMedico(diasElegidos[i], primeraHora, dniMedico);
+		int hour = 0;
+		int min = 0;
+		while (hour < hourFin || min < minFin) {
+
+			Calendar calendar = GregorianCalendar.getInstance();
+			calendar.setTime(dateIni);
+			calendar.add(Calendar.MINUTE, duracionInt);
+			Date fechaSalida = calendar.getTime();
+			calendar.setTime(fechaSalida);
+			hour = calendar.get(Calendar.HOUR_OF_DAY);
+			min = calendar.get(Calendar.MINUTE);
+			String nuevaHora = montarHoras(hour, min);
+			System.out.println(nuevaHora);
+			try {
+				dateIni = format.parse(nuevaHora);
+			} catch (ParseException e) {
+				e.printStackTrace();
+			}
+			for (int j = 0; j < diasElegidos.length; j++)
+				HorarioMedicoDAO.anadirHoraMedico(diasElegidos[j], nuevaHora, dniMedico);
+		}
+	}
 
 	public JSONObject guardarNuevoMedico(String dni, String especialidad, String horaIni, String horaFin,
 			String[] diasElegidos, String centroMedico) {
